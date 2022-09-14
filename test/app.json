@@ -1,0 +1,47 @@
+{
+  "id": "96de362e-7b57-4398-b8df-98d697723707",
+  "name": "Parameter Handling - Test",
+  "publisher": "Jendev",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "5d86850b-0d76-4eca-bd7b-951ad998e997",
+      "name": "Tests-TestLibraries",
+      "publisher": "Microsoft",
+      "version": "20.1.0.0"
+    },
+    {
+      "id": "aee12b8a-88ae-44c6-892b-69196a844ac8",
+      "name": "Parameter Handling",
+      "publisher": "Jendev",
+      "version": "1.0.0.0"
+    }
+
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 80000,
+      "to": 80049
+    },
+    {
+      "from": 90000,
+      "to": 90049
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "9.0"
+}
