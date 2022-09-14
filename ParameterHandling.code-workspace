@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "src"
+		},
+		{
+			"path": "test"
+		},
+		{
+			"name": "Symbols",
+			"path": ".alpackages"
+		}
+	],
+	"settings": {
+    "cSpell.userWords": [
+        "alpackages",
+        "Jendev"
+    ]
+	}
+}
