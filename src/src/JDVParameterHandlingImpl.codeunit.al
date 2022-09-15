@@ -127,14 +127,6 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(StringBuilder.ToText().TrimEnd());
     end;
 
-    local procedure GetNextCharacter(Part: Text; Index: Integer): Char
-    begin
-        if StrLen(Part) = Index then
-            exit(0);
-
-        exit(Part[Index + 1]);
-    end;
-
     local procedure IsValidParameterNameCharacter(Character: Char; IsFirstCharacter: Boolean): Boolean
     begin
         if (Character = '_')
