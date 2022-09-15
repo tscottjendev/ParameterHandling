@@ -1,7 +1,5 @@
 codeunit 80009 "JDV Parameter - Switch" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;

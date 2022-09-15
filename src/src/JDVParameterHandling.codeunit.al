@@ -97,6 +97,11 @@ codeunit 80000 "JDV Parameter Handling"
         TestRequiredParameters();
     end;
 
+    procedure Count(): Integer
+    begin
+        exit(AllowedNames.Count);
+    end;
+
     local procedure BuildFullParameterString(): Text
     var
         StringBuilder: TextBuilder;

@@ -1,7 +1,5 @@
 codeunit 80008 "JDV Parameter - Integer" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;

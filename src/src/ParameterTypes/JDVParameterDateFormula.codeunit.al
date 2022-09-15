@@ -1,7 +1,5 @@
 codeunit 80005 "JDV Parameter - DateFormula" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;

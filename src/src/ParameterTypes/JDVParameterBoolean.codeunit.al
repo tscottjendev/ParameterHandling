@@ -1,7 +1,5 @@
 codeunit 80002 "JDV Parameter - Boolean" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;

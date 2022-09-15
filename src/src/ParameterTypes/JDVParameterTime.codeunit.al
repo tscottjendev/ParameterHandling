@@ -1,7 +1,5 @@
 codeunit 80011 "JDV Parameter - Time" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;

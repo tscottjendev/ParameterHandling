@@ -1,7 +1,5 @@
 codeunit 80010 "JDV Parameter - Text" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;

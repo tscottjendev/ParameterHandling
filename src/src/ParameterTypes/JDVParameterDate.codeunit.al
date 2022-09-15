@@ -1,7 +1,5 @@
 codeunit 80004 "JDV Parameter - Date" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;

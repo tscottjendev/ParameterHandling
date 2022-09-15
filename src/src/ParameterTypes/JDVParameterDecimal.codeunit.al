@@ -1,7 +1,5 @@
 codeunit 80007 "JDV Parameter - Decimal" implements "JDV ParameterHandler"
 {
-    Access = Internal;
-
     var
         Required: Boolean;
         HasDefaultValue: Boolean;
