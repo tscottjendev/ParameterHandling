@@ -1,4 +1,4 @@
-interface "JDV ParameterHandler"
+interface "JDV Parameter Handler"
 {
     Access = Public;
 

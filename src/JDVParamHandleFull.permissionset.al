@@ -10,10 +10,11 @@ permissionset 80000 "JDV ParamHandle Full"
         codeunit "JDV Parameter - DateFormula" = X,
         codeunit "JDV Parameter - DateTime" = X,
         codeunit "JDV Parameter - Decimal" = X,
-        codeunit "JDV Parameter Handling" = X,
         codeunit "JDV Parameter - Integer" = X,
-        codeunit "JDV Parameter Mgt." = X,
         codeunit "JDV Parameter - Switch" = X,
         codeunit "JDV Parameter - Text" = X,
-        codeunit "JDV Parameter - Time" = X;
+        codeunit "JDV Parameter - Time" = X,
+        codeunit "JDV Parameter Handling" = X,
+        codeunit "JDV Parameter Handling Impl." = X,
+        codeunit "JDV Parameter Mgt." = X;
 }

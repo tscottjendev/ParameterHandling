@@ -1,248 +1,93 @@
 codeunit 80000 "JDV Parameter Handling"
 {
+    Access = Public;
+    /// <summary>
+    /// Define the parameter schema (allowed parameters) and parse the provided parameter string
+    /// </summary>
     trigger OnRun()
     begin
         Error('do not run this object');
     end;
 
     var
-        AllowedParameters: array[20] of Interface "JDV ParameterHandler";
-        AllowedNames: List of [Text];
-        ReceivedNames: List of [Text];
-        RequiredNames: List of [Text];
-        ParameterString: Text;
+        JDVParameterHandlingImpl: Codeunit "JDV Parameter Handling Impl.";
 
-    procedure AddAllowedParameter(Parameter: Interface "JDV ParameterHandler")
+    /// <summary>
+    /// Add a single parameter to the parameter schema.
+    /// </summary>
+    /// <param name="Parameter">An Interface "JDV Parameter Handler" instance.</param>
+    procedure AddAllowedParameter(Parameter: Interface "JDV Parameter Handler")
     begin
-        TestParameter(Parameter);
-        AllowedNames.Add(Parameter.GetName());
-        AllowedParameters[AllowedNames.IndexOf(Parameter.GetName())] := Parameter;
-        if Parameter.GetIsRequired() then
-            RequiredNames.Add(Parameter.GetName());
+        JDVParameterHandlingImpl.AddAllowedParameter(Parameter);
     end;
 
-    procedure DefineAllowedParameters(Parameters: array[20] of Interface "JDV ParameterHandler")
-    var
-        Index: Integer;
-    begin
-        for Index := 1 to ArrayLen(Parameters) do
-            if Parameters[Index].Initialized() then begin
-                TestDuplicate(Parameters[Index]);
-                AllowedNames.Add(Parameters[Index].GetName());
-                AllowedParameters[AllowedNames.IndexOf(Parameters[Index].GetName())] := Parameters[Index];
-            end;
-    end;
-
-    procedure GetParameterString(): Text;
-    begin
-        exit(GetParameterString(false));
-    end;
-
-    procedure GetParameterString(IncludeAll: Boolean): Text;
-    begin
-        if IncludeAll then
-            exit(BuildFullParameterString());
-
-        exit(ParameterString);
-    end;
-
-    procedure GetParameterValue(ParameterName: Text) ParameterValue: Variant
-    begin
-        exit(AllowedParameters[AllowedNames.IndexOf(ParameterName)].GetValue());
-    end;
-
-    procedure ParseParameters(NewParameterString: Text)
-    var
-        PartBuilder: TextBuilder;
-        ParameterStringBuilder: TextBuilder;
-        ParameterName: Text;
-        ParameterValueVariant: Variant;
-        Parameter: Text;
-        Part: Text;
-        NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
-    begin
-        //          1         2         3
-        // 123456789012345678901234567890
-        // -l -p 8080 -d /usr/logs
-        // assume <space>- is separator except first
-        // first must be -
-        // parameter key must be digit, letters, underscore only
-        // parameter key cannot start with a digit
-
-        Part := NewParameterString.Trim();
-        repeat
-            PartBuilder.Clear();
-            ParameterName := ParseParameterName(Part);
-            if not AllowedNames.Contains(ParameterName) then
-                Error(NotRecognizedErr, ParameterName);
-
-            ReceivedNames.Add(ParameterName);
-
-            ParameterValueVariant := ParseParameterValue(ParameterName, Part);
-            SetParameterValue(ParameterName, ParameterValueVariant);
-
-            PartBuilder.Append(ParameterIdentifier());
-            PartBuilder.Append(ParameterName);
-            PartBuilder.Append(ParameterSeparator());
-            PartBuilder.Append(Format(ParameterValueVariant));
-
-            Parameter := PartBuilder.ToText().TrimEnd();
-            ParameterStringBuilder.Append(Parameter);
-            ParameterStringBuilder.Append(ParameterSeparator());
-
-            Part := NewParameterString.Substring(NewParameterString.IndexOf(Parameter) + StrLen(Parameter)).Trim();
-        until (ParameterStringBuilder.ToText().TrimEnd() = NewParameterString);
-        ParameterString := ParameterStringBuilder.ToText().TrimEnd();
-
-        TestRequiredParameters();
-    end;
-
+    /// <summary>
+    /// The number of parameters passed in the parameter string.
+    /// </summary>
+    /// <returns>The number of parameters passed in the parameter string</returns>
     procedure Count(): Integer
     begin
-        exit(AllowedNames.Count);
+        exit(JDVParameterHandlingImpl.Count());
     end;
 
-    local procedure BuildFullParameterString(): Text
-    var
-        StringBuilder: TextBuilder;
-        Index: Integer;
-        Name: Text;
+    /// <summary>
+    /// Add the array of parameters that are valid for the parameter schema.
+    /// </summary>
+    /// <param name="Parameters">An array[20] of Interface "JDV Parameter Handler" instances.</param>
+    procedure DefineAllowedParameters(Parameters: array[20] of Interface "JDV Parameter Handler")
     begin
-        foreach Name in AllowedNames do begin
-            Index := AllowedNames.IndexOf(Name);
-            AllowedParameters[Index].Convert();
-            if AllowedParameters[Index].Initialized() then begin
-                StringBuilder.Append(ParameterIdentifier());
-                StringBuilder.Append(AllowedParameters[Index].GetName());
-                StringBuilder.Append(ParameterSeparator());
-                StringBuilder.Append(Format(AllowedParameters[Index].GetValue()));
-                StringBuilder.Append(ParameterSeparator());
-            end;
-        end;
-
-        exit(StringBuilder.ToText().TrimEnd());
+        JDVParameterHandlingImpl.DefineAllowedParameters(Parameters);
     end;
 
-    local procedure GetNextCharacter(Part: Text; Index: Integer): Char
+    /// <summary>
+    /// Get the parameter string that was parsed.  This is not the original string but the recreated string from the parameters passed. The parameters values will have been converted to their values.
+    /// e.g. a boolean parameter can be passed a -boolean 1 and the 1 will be translated to Yes.
+    /// </summary>
+    /// <returns>The parameter string.</returns>
+    procedure GetParameterString(): Text;
     begin
-        if StrLen(Part) = Index then
-            exit(0);
-
-        exit(Part[Index + 1]);
+        exit(JDVParameterHandlingImpl.GetParameterString());
     end;
 
-    local procedure IsValidParameterNameCharacter(Character: Char; IsFirstCharacter: Boolean): Boolean
+    /// <summary>
+    /// Get the parameter string that was parsed.  This is not the original string but the recreated string from the parameters passed. The parameters values will have been converted to their values.
+    /// e.g. a boolean parameter can be passed a -boolean 1 and the 1 will be translated to Yes.
+    /// </summary>
+    /// <param name="IncludeAll">Pass true to include all parameters in the schema.</param>
+    /// <returns>If IncludeAll is true then all parameters defined in the parameter schema are returned.  The values will be either the actual passed values or the defaults of any parameter not included in the paramenter string.</returns>
+    procedure GetParameterString(IncludeAll: Boolean): Text;
     begin
-        if (Character = '_')
-            or (Character in ['A' .. 'Z'])
-            or (Character in ['a' .. 'z'])
-            or ((Character in ['0' .. '9'])
-                and (not IsFirstCharacter))
-        then
-            exit(true);
-
-        exit(false);
+        exit(JDVParameterHandlingImpl.GetParameterString(IncludeAll));
     end;
 
-    local procedure ParameterIdentifier(): Text;
-    var
-        ParameterDelimiterTxt: Label '-', Locked = true;
+    /// <summary>
+    /// Get the value of a specific parameter.
+    /// </summary>
+    /// <param name="ParameterName">The name of the parameter whose value is required</param>
+    /// <remarks>
+    /// The return is of type Variant.  The inner type is determined by the parameter instance in the schema.
+    /// </remarks>
+    /// <returns>The value of the requested parameter.</returns>
+    procedure GetParameterValue(ParameterName: Text) ParameterValue: Variant
     begin
-        exit(ParameterDelimiterTxt);
+        exit(JDVParameterHandlingImpl.GetParameterValue(ParameterName));
     end;
 
-    local procedure ParameterSeparator(): Text;
-    var
-        ParameterSeparatorTxt: Label ' ', Locked = true;
+    /// <summary>
+    /// The number of parameters in the schema.
+    /// </summary>
+    /// <returns>The number of parameters in the schema.</returns>
+    procedure ParameterCount(): Integer
     begin
-        exit(ParameterSeparatorTxt);
+        exit(JDVParameterHandlingImpl.ParameterCount());
     end;
 
-    local procedure ParseParameterName(Part: Text): Text
-    var
-        PartBuilder: TextBuilder;
-        Character: Char;
-        Index: Integer;
-        InvalidParameterStringErr: Label 'Invalid parameter string - %1', Comment = '%1 is the parameter string';
+    /// <summary>
+    /// Parses and validates the provided parameter string.
+    /// </summary>
+    /// <param name="ParameterString">The parameter string to be parsed.</param>
+    procedure ParseParameters(ParameterString: Text)
     begin
-        if not Part.StartsWith(ParameterIdentifier()) then
-            Error(InvalidParameterStringErr, Part);
-
-        for Index := 1 to StrLen(Part) do begin
-            Character := Part[Index];
-            if Character <> ParameterIdentifier() then
-                if IsValidParameterNameCharacter(Character, Index = 2) then
-                    PartBuilder.Append(Character);
-
-            if (Character = ParameterSeparator())
-                or (Index = StrLen(Part))
-            then
-                exit(PartBuilder.ToText());
-        end;
-
-        Error(InvalidParameterStringErr, Part);
-    end;
-
-    local procedure ParseParameterValue(PartName: Text; Part: Text): Text
-    var
-        PartBuilder: TextBuilder;
-        Character: Char;
-        NextCharacter: Char;
-        Index: Integer;
-    begin
-        Part := Part.Substring(Part.IndexOf(PartName) + StrLen(PartName) + 1);
-        for Index := 1 to StrLen(Part) do begin
-            Character := Part[Index];
-            NextCharacter := GetNextCharacter(Part, Index);
-            if (Character = ParameterIdentifier())
-                and IsValidParameterNameCharacter(NextCharacter, true)
-            then
-                exit(PartBuilder.ToText().TrimEnd());
-
-            PartBuilder.Append(Character);
-        end;
-
-        exit(PartBuilder.ToText().TrimEnd());
-    end;
-
-    local procedure SetParameterValue(Name: Text; ValueVariant: Variant)
-    var
-        Parameter: Interface "JDV ParameterHandler";
-    begin
-        Parameter := AllowedParameters[AllowedNames.IndexOf(Name)];
-        Parameter.SetValue(ValueVariant);
-        Parameter.Convert();
-    end;
-
-    local procedure TestDuplicate(Parameter: Interface "JDV ParameterHandler")
-    var
-        DuplicateParameterErr: Label 'Parameter ''%1'' can only be specified once.', Comment = '%1 is the parameter name';
-    begin
-        if AllowedNames.Contains(Parameter.GetName()) then
-            Error(DuplicateParameterErr, Parameter.GetName());
-    end;
-
-    local procedure TestInitialized(Parameter: Interface "JDV ParameterHandler")
-    var
-        ParameterNotInitializedErr: Label 'Parameter is not properly configured.';
-    begin
-        if not Parameter.Initialized() then
-            Error(ParameterNotInitializedErr);
-    end;
-
-    local procedure TestParameter(Parameter: Interface "JDV ParameterHandler")
-    begin
-        TestInitialized(Parameter);
-        TestDuplicate(Parameter);
-    end;
-
-    local procedure TestRequiredParameters()
-    var
-        Name: Text;
-        RequiredParameterMissingErr: Label 'Required parameter ''%1'' is missing from parameter string.', Comment = '%1 is the parameter name';
-    begin
-        foreach Name in RequiredNames do
-            if not ReceivedNames.Contains(Name) then
-                Error(RequiredParameterMissingErr, Name);
+        JDVParameterHandlingImpl.ParseParameters(ParameterString);
     end;
 }
