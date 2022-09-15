@@ -23,6 +23,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
             RequiredNames.Add(Parameter.GetName());
     end;
 
+    procedure Count(): Integer
+    begin
+        exit(ReceivedNames.Count);
+    end;
+
     procedure DefineAllowedParameters(Parameters: array[20] of Interface "JDV Parameter Handler")
     var
         Index: Integer;
@@ -51,6 +56,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
     procedure GetParameterValue(ParameterName: Text) ParameterValue: Variant
     begin
         exit(AllowedParameters[AllowedNames.IndexOf(ParameterName)].GetValue());
+    end;
+
+    procedure ParameterCount(): Integer
+    begin
+        exit(AllowedNames.Count);
     end;
 
     procedure ParseParameters(NewParameterString: Text)
@@ -93,16 +103,6 @@ codeunit 80012 "JDV Parameter Handling Impl."
         ParameterString := ParameterStringBuilder.ToText().TrimEnd();
 
         TestRequiredParameters();
-    end;
-
-    procedure ParameterCount(): Integer
-    begin
-        exit(AllowedNames.Count);
-    end;
-
-    procedure Count(): Integer
-    begin
-        exit(ReceivedNames.Count);
     end;
 
 
@@ -189,24 +189,27 @@ codeunit 80012 "JDV Parameter Handling Impl."
 
     local procedure ParseParameterValue(PartName: Text; Part: Text): Text
     var
-        PartBuilder: TextBuilder;
-        Character: Char;
-        NextCharacter: Char;
         Index: Integer;
+        Separator: Text[2];
+        ValueBuilder: TextBuilder;
     begin
         Part := Part.Substring(Part.IndexOf(PartName) + StrLen(PartName) + 1);
-        for Index := 1 to StrLen(Part) do begin
-            Character := Part[Index];
-            NextCharacter := GetNextCharacter(Part, Index);
-            if (Character = ParameterIdentifier())
-                and IsValidParameterNameCharacter(NextCharacter, true)
-            then
-                exit(PartBuilder.ToText().TrimEnd());
+        Separator := ParameterSeparator() + ParameterIdentifier();
 
-            PartBuilder.Append(Character);
+        Index := 1;
+        while (Part.Substring(Index, StrLen(Separator)) <> Separator)
+            and (Index <= StrLen(Part))
+        do begin
+            ValueBuilder.Append(Part[Index]);
+            Index += 1;
+
+            if Index = StrLen(Part) then begin
+                ValueBuilder.Append(Part[Index]);
+                exit(ValueBuilder.ToText());
+            end;
         end;
 
-        exit(PartBuilder.ToText().TrimEnd());
+        exit(ValueBuilder.ToText());
     end;
 
     local procedure SetParameterValue(Name: Text; ValueVariant: Variant)
