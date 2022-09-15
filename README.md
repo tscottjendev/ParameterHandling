@@ -4,6 +4,8 @@ This extension has been created to handle the parameter string that can be passe
 If you have comments, suggestions, pull requests let me know.
 
 **NOTE:** this is in its infancy so there may be radical changes as it matures.
+**NOTE:** this is currently in the custom dev range (80000 - 80049) it will be moved to an appSource range in the future.
+
 ## Usage
 ### Parameter Types
 There is a series of parameter Codeunits that provide typed parameters for most simple AL types (decimal, integer, date, time, datetime, text, code, dateformula, boolean).  The interface `JDV Parameter Handler` can be used to add a new type parameter.
