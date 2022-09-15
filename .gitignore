@@ -13,3 +13,4 @@ BuildOutput.txt
 .altemplates/
 cache_*
 */.vs/*
+~*.xlsx

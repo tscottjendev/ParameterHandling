@@ -15,6 +15,9 @@
     "cSpell.userWords": [
         "alpackages",
         "Jendev"
-    ]
+	],
+	"al.packageCachePath": "../.alpackages",
+	"al.enableCodeAnalysis": true,
+	"al.enableCodeActions": true
 	}
 }
