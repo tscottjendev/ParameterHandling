@@ -65,36 +65,24 @@ codeunit 80012 "JDV Parameter Handling Impl."
 
     procedure ParseParameters(NewParameterString: Text)
     var
-        PartBuilder: TextBuilder;
         ParameterStringBuilder: TextBuilder;
-        ParameterName: Text;
         ParameterValueVariant: Variant;
+        ParameterName: Text;
         Parameter: Text;
         Part: Text;
-        NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
-        DuplicateInStringErr: Label 'Parameter ''%1'' appears more than once in the parameter string.', Comment = '%1 is parameter name';
     begin
         Part := NewParameterString.Trim();
         repeat
-            PartBuilder.Clear();
             ParameterName := ParseParameterName(Part);
-            if not AllowedNames.Contains(ParameterName) then
-                Error(NotRecognizedErr, ParameterName);
-
-            if ReceivedNames.Contains(ParameterName) then
-                Error(DuplicateInStringErr, ParameterName);
+            TestAllowed(ParameterName);
+            TestDuplicate(ParameterName);
 
             ReceivedNames.Add(ParameterName);
 
             ParameterValueVariant := ParseParameterValue(ParameterName, Part);
             SetParameterValue(ParameterName, ParameterValueVariant);
 
-            PartBuilder.Append(ParameterIdentifier());
-            PartBuilder.Append(ParameterName);
-            PartBuilder.Append(ParameterSeparator());
-            PartBuilder.Append(Format(ParameterValueVariant));
-
-            Parameter := PartBuilder.ToText().TrimEnd();
+            Parameter := BuildParameter(ParameterName, ParameterValueVariant);
             ParameterStringBuilder.Append(Parameter);
             ParameterStringBuilder.Append(ParameterSeparator());
 
@@ -105,6 +93,33 @@ codeunit 80012 "JDV Parameter Handling Impl."
         TestRequiredParameters();
     end;
 
+    local procedure TestAllowed(ParameterName: Text)
+    var
+        NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
+    begin
+        if not AllowedNames.Contains(ParameterName) then
+            Error(NotRecognizedErr, ParameterName);
+    end;
+
+    local procedure TestDuplicate(ParameterName: Text)
+    var
+        DuplicateInStringErr: Label 'Parameter ''%1'' appears more than once in the parameter string.', Comment = '%1 is parameter name';
+    begin
+        if ReceivedNames.Contains(ParameterName) then
+            Error(DuplicateInStringErr, ParameterName);
+    end;
+
+    local procedure BuildParameter(ParameterName: Text; ParameterValueVariant: Variant): Text
+    var
+        PartBuilder: TextBuilder;
+    begin
+        PartBuilder.Append(ParameterIdentifier());
+        PartBuilder.Append(ParameterName);
+        PartBuilder.Append(ParameterSeparator());
+        PartBuilder.Append(Format(ParameterValueVariant));
+
+        exit(PartBuilder.ToText().TrimEnd());
+    end;
 
     local procedure BuildFullParameterString(): Text
     var

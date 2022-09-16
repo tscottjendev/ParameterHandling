@@ -1,0 +1,10 @@
+{
+    "name": "General Override",
+    "description": "Default overrides of Code Analyzers for Jendev ",
+    "rules": [
+        {
+            "id": "PTE0005",
+            "action": "None",
+            "justification": "The compilation target is set to 'OnPrem', but it must be set to 'Cloud' or 'Extension'."
+        }    ]
+}
