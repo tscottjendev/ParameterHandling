@@ -6,326 +6,395 @@ codeunit 80001 "JDV Parameter Mgt."
     end;
 
     procedure BooleanParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Boolean"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, false));
+        exit(JDVParameterMgtImpl.BooleanParameter(Name));
     end;
 
     procedure BooleanParameter(Name: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Boolean"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, false, Required));
+        exit(JDVParameterMgtImpl.BooleanParameter(Name, Required));
     end;
 
     procedure CodeParameter(Name: Text; DefaultValue: Code[2048]) Parameter: Codeunit "JDV Parameter - Code"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue));
+        exit(JDVParameterMgtImpl.CodeParameter(Name, DefaultValue));
     end;
 
     procedure CodeParameter(Name: Text; DefaultValue: Code[2048]; Required: Boolean) Parameter: Codeunit "JDV Parameter - Code"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, Required));
+        exit(JDVParameterMgtImpl.CodeParameter(Name, DefaultValue, Required));
     end;
 
     procedure CodeParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Code"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(CodeParameter(Name, '', false));
+        exit(JDVParameterMgtImpl.CodeParameter(Name));
     end;
 
-
     procedure ConvertToBoolean(BooleanText: Text) Value: Boolean
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, BooleanText);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToBoolean(BooleanText));
     end;
 
     procedure ConvertToCode(CodeValue: Text) Value: Code[2048]
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, CodeValue);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToCode(CodeValue));
     end;
 
     procedure ConvertToDate(DateText: Text) Value: Date
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, DateText);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToDate(DateText));
     end;
 
     procedure ConvertToDateFormula(DateFormulaText: Text) Value: DateFormula
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, DateFormulaText);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToDateFormula(DateFormulaText));
     end;
 
     procedure ConvertToDateTime(DateTimeText: Text) Value: DateTime
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, DateTimeText);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToDateTime(DateTimeText));
     end;
 
     procedure ConvertToDecimal(DecimalText: Text) Value: Decimal
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, DecimalText);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToDecimal(DecimalText));
     end;
 
     procedure ConvertToInteger(IntegerText: Text) Value: Integer
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, IntegerText);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToInteger(IntegerText));
     end;
 
     procedure ConvertToText(TextValue: Text) Value: Text
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, TextValue);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToText(TextValue));
     end;
 
     procedure ConvertToTime(TimeText: Text) Value: Time
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(Value, TimeText);
-
-        exit(Value);
+        exit(JDVParameterMgtImpl.ConvertToTime(TimeText));
     end;
 
     procedure DateFormulaParameter(Name: Text; DefaultValue: Text) Parameter: Codeunit "JDV Parameter - DateFormula"
     var
-        DateFormulaValue: DateFormula;
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(DateFormulaValue, DefaultValue);
-        exit(Parameter(Name, DateFormulaValue));
+        exit(JDVParameterMgtImpl.DateFormulaParameter(Name, DefaultValue));
     end;
 
     procedure DateFormulaParameter(Name: Text) Parameter: Codeunit "JDV Parameter - DateFormula"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(DateFormulaParameter(Name, ''));
+        exit(JDVParameterMgtImpl.DateFormulaParameter(Name));
     end;
 
     procedure DateFormulaParameter(Name: Text; DefaultValue: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - DateFormula"
     var
-        DateFormulaValue: DateFormula;
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Evaluate(DateFormulaValue, DefaultValue);
-        exit(Parameter(Name, DateFormulaValue, Required));
+        exit(JDVParameterMgtImpl.DateFormulaParameter(Name, DefaultValue, Required));
     end;
 
     procedure DateFormulaParameter(Name: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - DateFormula"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(DateFormulaParameter(Name, '', Required));
+        exit(JDVParameterMgtImpl.DateFormulaParameter(Name, Required));
     end;
 
-    procedure DateParameter(Name: Text; DefaultValue: Date) Parameter: Codeunit "JDV Parameter - Date"
+    procedure DateParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Date"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0D));
+        exit(JDVParameterMgtImpl.DateParameter(Name));
+    end;
+
+    procedure IntegerParameter(Name: Text; DefaultValue: Integer; Required: Boolean) Parameter: Codeunit "JDV Parameter - Integer"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
+    begin
+        exit(JDVParameterMgtImpl.IntegerParameter(Name, DefaultValue, Required));
+    end;
+
+
+    procedure DateParameter(Name: Text; DefaultValue: Date) Parameter: Codeunit "JDV Parameter - Date"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
+    begin
+        exit(JDVParameterMgtImpl.DateParameter(Name, DefaultValue));
     end;
 
     procedure DateParameter(Name: Text; DefaultValue: Date; Required: Boolean) Parameter: Codeunit "JDV Parameter - Date"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0D, Required));
+        exit(JDVParameterMgtImpl.DateParameter(Name, DefaultValue, Required));
     end;
 
     procedure DateTimeParameter(Name: Text) Parameter: Codeunit "JDV Parameter - DateTime"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0DT));
+        exit(JDVParameterMgtImpl.DateTimeParameter(Name));
     end;
 
     procedure DateTimeParameter(Name: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - DateTime"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0DT, Required));
+        exit(JDVParameterMgtImpl.DateTimeParameter(Name, Required));
+    end;
+
+    procedure DecimalParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Decimal"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
+    begin
+        exit(JDVParameterMgtImpl.DecimalParameter(Name));
     end;
 
     procedure DecimalParameter(Name: Text; DefaultValue: Decimal) Parameter: Codeunit "JDV Parameter - Decimal"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0.0));
+        exit(JDVParameterMgtImpl.DecimalParameter(Name, DefaultValue));
     end;
 
     procedure DecimalParameter(Name: Text; DefaultValue: Decimal; Required: Boolean) Parameter: Codeunit "JDV Parameter - Decimal"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0.0, Required));
+        exit(JDVParameterMgtImpl.DecimalParameter(Name, DefaultValue, Required));
     end;
 
     procedure IntegerParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Integer"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0));
+        exit(JDVParameterMgtImpl.IntegerParameter(Name));
     end;
 
     procedure IntegerParameter(Name: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Integer"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, 0, Required));
+        exit(JDVParameterMgtImpl.IntegerParameter(Name, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Text) Parameter: Codeunit "JDV Parameter - Text"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Code[2048]) Parameter: Codeunit "JDV Parameter - Code"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Boolean) Parameter: Codeunit "JDV Parameter - Boolean"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Integer) Parameter: Codeunit "JDV Parameter - Integer"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: DateTime) Parameter: Codeunit "JDV Parameter - DateTime"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: DateFormula) Parameter: Codeunit "JDV Parameter - DateFormula"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Decimal) Parameter: Codeunit "JDV Parameter - Decimal"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Date) Parameter: Codeunit "JDV Parameter - Date"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Time) Parameter: Codeunit "JDV Parameter - Time"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, false));
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Text"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Code[2048]; Required: Boolean) Parameter: Codeunit "JDV Parameter - Code"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Boolean; Required: Boolean) Parameter: Codeunit "JDV Parameter - Boolean"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Integer; Required: Boolean) Parameter: Codeunit "JDV Parameter - Integer"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: DateTime; Required: Boolean) Parameter: Codeunit "JDV Parameter - DateTime"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: DateFormula; Required: Boolean) Parameter: Codeunit "JDV Parameter - DateFormula"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Decimal; Required: Boolean) Parameter: Codeunit "JDV Parameter - Decimal"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Date; Required: Boolean) Parameter: Codeunit "JDV Parameter - Date"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Time; Required: Boolean) Parameter: Codeunit "JDV Parameter - Time"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(DefaultValue);
-        Parameter.IsRequired(Required);
-
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.Parameter(Name, DefaultValue, Required));
     end;
 
     procedure SwitchParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Switch"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(SwitchParameter(Name, false));
+        exit(JDVParameterMgtImpl.SwitchParameter(Name));
     end;
 
     procedure SwitchParameter(Name: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Switch"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        Parameter.Name(Name);
-        Parameter.DefaultValue(false);
-        Parameter.IsRequired(Required);
-        exit(Parameter);
+        exit(JDVParameterMgtImpl.SwitchParameter(Name, Required));
     end;
 
     procedure TextParameter(Name: Text; DefaultValue: Text) Parameter: Codeunit "JDV Parameter - Text"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue));
+        exit(JDVParameterMgtImpl.TextParameter(Name, DefaultValue));
     end;
 
     procedure TextParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Text"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(TextParameter(Name, ''));
+        exit(JDVParameterMgtImpl.TextParameter(Name));
     end;
 
     procedure TextParameter(Name: Text; DefaultValue: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Text"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, Required));
+        exit(JDVParameterMgtImpl.TextParameter(Name, DefaultValue, Required));
     end;
 
     procedure TextParameter(Name: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Text"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(TextParameter(Name, '', Required));
+        exit(JDVParameterMgtImpl.TextParameter(Name, Required));
+    end;
+
+    procedure TimeParameter(Name: Text) Parameter: Codeunit "JDV Parameter - Time"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
+    begin
+        exit(JDVParameterMgtImpl.TimeParameter(Name));
     end;
 
     procedure TimeParameter(Name: Text; DefaultValue: Time) Parameter: Codeunit "JDV Parameter - Time"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue));
+        exit(JDVParameterMgtImpl.TimeParameter(Name, DefaultValue));
     end;
 
     procedure TimeParameter(Name: Text; DefaultValue: Time; Required: Boolean) Parameter: Codeunit "JDV Parameter - Time"
+    var
+        JDVParameterMgtImpl: Codeunit "JDV Parameter Mgt. Impl.";
     begin
-        exit(Parameter(Name, DefaultValue, Required));
+        exit(JDVParameterMgtImpl.TimeParameter(Name, DefaultValue, Required));
     end;
 }
