@@ -93,34 +93,6 @@ codeunit 80012 "JDV Parameter Handling Impl."
         TestRequiredParameters();
     end;
 
-    local procedure TestAllowed(ParameterName: Text)
-    var
-        NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
-    begin
-        if not AllowedNames.Contains(ParameterName) then
-            Error(NotRecognizedErr, ParameterName);
-    end;
-
-    local procedure TestDuplicate(ParameterName: Text)
-    var
-        DuplicateInStringErr: Label 'Parameter ''%1'' appears more than once in the parameter string.', Comment = '%1 is parameter name';
-    begin
-        if ReceivedNames.Contains(ParameterName) then
-            Error(DuplicateInStringErr, ParameterName);
-    end;
-
-    local procedure BuildParameter(ParameterName: Text; ParameterValueVariant: Variant): Text
-    var
-        PartBuilder: TextBuilder;
-    begin
-        PartBuilder.Append(ParameterIdentifier());
-        PartBuilder.Append(ParameterName);
-        PartBuilder.Append(ParameterSeparator());
-        PartBuilder.Append(Format(ParameterValueVariant));
-
-        exit(PartBuilder.ToText().TrimEnd());
-    end;
-
     local procedure BuildFullParameterString(): Text
     var
         StringBuilder: TextBuilder;
@@ -142,17 +114,42 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(StringBuilder.ToText().TrimEnd());
     end;
 
+    local procedure BuildParameter(ParameterName: Text; ParameterValueVariant: Variant): Text
+    var
+        PartBuilder: TextBuilder;
+    begin
+        PartBuilder.Append(ParameterIdentifier());
+        PartBuilder.Append(ParameterName);
+        PartBuilder.Append(ParameterSeparator());
+        PartBuilder.Append(Format(ParameterValueVariant));
+
+        exit(PartBuilder.ToText().TrimEnd());
+    end;
+
+    local procedure IsAlphabeticCharacter(Character: Char): Boolean
+    begin
+        exit((Character in ['A' .. 'Z'])
+            or (Character in ['a' .. 'z']));
+    end;
+
+    local procedure IsNumericCharacter(Character: Char): Boolean
+    begin
+        exit((Character in ['0' .. '9']));
+    end;
+
+    local procedure IsValidCharacter(Character: Char): Boolean
+    begin
+        exit((Character = '_')
+            or IsAlphabeticCharacter(Character)
+            or IsNumericCharacter(Character));
+    end;
+
     local procedure IsValidParameterNameCharacter(Character: Char; IsFirstCharacter: Boolean): Boolean
     begin
-        if (Character = '_')
-            or (Character in ['A' .. 'Z'])
-            or (Character in ['a' .. 'z'])
-            or ((Character in ['0' .. '9'])
-                and (not IsFirstCharacter))
-        then
-            exit(true);
+        if IsFirstCharacter then
+            exit(IsAlphabeticCharacter(Character));
 
-        exit(false);
+        exit(IsValidCharacter(Character));
     end;
 
     local procedure ParameterIdentifier(): Text;
@@ -226,6 +223,22 @@ codeunit 80012 "JDV Parameter Handling Impl."
         Parameter := AllowedParameters[AllowedNames.IndexOf(Name)];
         Parameter.SetValue(ValueVariant);
         Parameter.Convert();
+    end;
+
+    local procedure TestAllowed(ParameterName: Text)
+    var
+        NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
+    begin
+        if not AllowedNames.Contains(ParameterName) then
+            Error(NotRecognizedErr, ParameterName);
+    end;
+
+    local procedure TestDuplicate(ParameterName: Text)
+    var
+        DuplicateInStringErr: Label 'Parameter ''%1'' appears more than once in the parameter string.', Comment = '%1 is parameter name';
+    begin
+        if ReceivedNames.Contains(ParameterName) then
+            Error(DuplicateInStringErr, ParameterName);
     end;
 
     local procedure TestDuplicate(Parameter: Interface "JDV Parameter Handler")
