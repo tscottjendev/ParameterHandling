@@ -166,29 +166,24 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(ParameterSeparatorTxt);
     end;
 
-    local procedure ParseParameterName(Part: Text): Text
+    local procedure ParseParameterName(ParameterString: Text): Text
     var
-        PartBuilder: TextBuilder;
+        NameBuilder: TextBuilder;
         Character: Char;
         Index: Integer;
-        InvalidParameterStringErr: Label 'Invalid parameter string - ''%1''', Comment = '%1 is the parameter string';
     begin
-        if not Part.StartsWith(ParameterIdentifier()) then
-            Error(InvalidParameterStringErr, Part);
+        TestValidParameterString(ParameterString);
 
-        for Index := 1 to StrLen(Part) do begin
-            Character := Part[Index];
-            if Character <> ParameterIdentifier() then
-                if IsValidParameterNameCharacter(Character, Index = 2) then
-                    PartBuilder.Append(Character);
+        for Index := 1 to StrLen(ParameterString) do begin
+            Character := ParameterString[Index];
+            if IsValidParameterNameCharacter(Character, Index = 2) then
+                NameBuilder.Append(Character);
 
-            if (Character = ParameterSeparator())
-                or (Index = StrLen(Part))
-            then
-                exit(PartBuilder.ToText());
+            if Character = ParameterSeparator() then
+                exit(NameBuilder.ToText());
         end;
 
-        Error(InvalidParameterStringErr, Part);
+        exit(NameBuilder.ToText());
     end;
 
     local procedure ParseParameterValue(PartName: Text; Part: Text): Text
@@ -271,5 +266,14 @@ codeunit 80012 "JDV Parameter Handling Impl."
         foreach Name in RequiredNames do
             if not ReceivedNames.Contains(Name) then
                 Error(RequiredParameterMissingErr, Name);
+    end;
+
+    local procedure TestValidParameterString(ParameterString: Text)
+    var
+        InvalidParameterStringErr: Label 'Invalid parameter string - ''%1''', Comment = '%1 is the parameter string';
+    begin
+        if not ParameterString.StartsWith(ParameterIdentifier()) then
+            Error(InvalidParameterStringErr, ParameterString);
+
     end;
 }
