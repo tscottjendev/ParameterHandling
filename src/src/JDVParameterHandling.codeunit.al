@@ -40,13 +40,22 @@ codeunit 80000 "JDV Parameter Handling"
     end;
 
     /// <summary>
+    /// The number of parameters in the schema.
+    /// </summary>
+    /// <returns>The number of parameters in the schema.</returns>
+    procedure ParameterCount(): Integer
+    begin
+        exit(JDVParameterHandlingImpl.ParameterCount());
+    end;
+
+    /// <summary>
     /// Get the parameter string that was parsed.  This is not the original string but the recreated string from the parameters passed. The parameters values will have been converted to their values.
     /// e.g. a boolean parameter can be passed a -boolean 1 and the 1 will be translated to Yes.
     /// </summary>
     /// <returns>The parameter string.</returns>
-    procedure GetParameterString(): Text;
+    procedure ParameterString(): Text;
     begin
-        exit(JDVParameterHandlingImpl.GetParameterString());
+        exit(JDVParameterHandlingImpl.ParameterString());
     end;
 
     /// <summary>
@@ -55,9 +64,9 @@ codeunit 80000 "JDV Parameter Handling"
     /// </summary>
     /// <param name="IncludeAll">Pass true to include all parameters in the schema.</param>
     /// <returns>If IncludeAll is true then all parameters defined in the parameter schema are returned.  The values will be either the actual passed values or the defaults of any parameter not included in the paramenter string.</returns>
-    procedure GetParameterString(IncludeAll: Boolean): Text;
+    procedure ParameterString(IncludeAll: Boolean): Text;
     begin
-        exit(JDVParameterHandlingImpl.GetParameterString(IncludeAll));
+        exit(JDVParameterHandlingImpl.ParameterString(IncludeAll));
     end;
 
     /// <summary>
@@ -68,18 +77,9 @@ codeunit 80000 "JDV Parameter Handling"
     /// The return is of type Variant.  The inner type is determined by the parameter instance in the schema.
     /// </remarks>
     /// <returns>The value of the requested parameter.</returns>
-    procedure GetParameterValue(ParameterName: Text) ParameterValue: Variant
+    procedure ParameterValue(ParameterName: Text) ParameterValue: Variant
     begin
-        exit(JDVParameterHandlingImpl.GetParameterValue(ParameterName));
-    end;
-
-    /// <summary>
-    /// The number of parameters in the schema.
-    /// </summary>
-    /// <returns>The number of parameters in the schema.</returns>
-    procedure ParameterCount(): Integer
-    begin
-        exit(JDVParameterHandlingImpl.ParameterCount());
+        exit(JDVParameterHandlingImpl.ParameterValue(ParameterName));
     end;
 
     /// <summary>

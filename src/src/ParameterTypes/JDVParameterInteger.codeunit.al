@@ -8,7 +8,7 @@ codeunit 80008 "JDV Parameter - Integer" implements "JDV Parameter Handler"
         Required: Boolean;
         HasDefaultValue: Boolean;
         HasName: Boolean;
-        Name: Text;
+        _Name: Text;
         DefaultValueVariant: Variant;
         ValueVariant: Variant;
 
@@ -20,28 +20,18 @@ codeunit 80008 "JDV Parameter - Integer" implements "JDV Parameter Handler"
         ValueVariant := JDVParameterMgt.ConvertToInteger(Format(ValueVariant));
     end;
 
-    /// <inheritdoc cref="GetDefaultValue()"/>
-    procedure GetDefaultValue(): Variant
+    /// <inheritdoc cref="DefaultValue()"/>
+    procedure DefaultValue(): Variant
     begin
         exit(DefaultValueVariant);
     end;
 
-    /// <inheritdoc cref="GetIsRequired()"/>
-    procedure GetIsRequired(): Boolean
+    /// <inheritdoc cref="DefaultValue(ParameterDefaultValueVariant: Variant)"/>
+    procedure DefaultValue(ParameterDefaultValueVariant: Variant)
     begin
-        exit(Required);
-    end;
-
-    /// <inheritdoc cref="GetName()"/>
-    procedure GetName(): Text
-    begin
-        exit(Name);
-    end;
-
-    /// <inheritdoc cref="GetValue()"/>
-    procedure GetValue(): Variant
-    begin
-        exit(ValueVariant);
+        DefaultValueVariant := ParameterDefaultValueVariant;
+        ValueVariant := DefaultValueVariant;
+        HasDefaultValue := true;
     end;
 
     /// <inheritdoc cref="Initialized()"/>
@@ -50,29 +40,39 @@ codeunit 80008 "JDV Parameter - Integer" implements "JDV Parameter Handler"
         exit(HasName and HasDefaultValue);
     end;
 
-    /// <inheritdoc cref="SetDefaultValue(ParameterDefaultValueVariant: Variant)"/>
-    procedure SetDefaultValue(ParameterDefaultValueVariant: Variant)
+    /// <inheritdoc cref="IsRequired()"/>
+    procedure IsRequired(): Boolean
     begin
-        DefaultValueVariant := ParameterDefaultValueVariant;
-        ValueVariant := DefaultValueVariant;
-        HasDefaultValue := true;
+        exit(Required);
     end;
 
-    /// <inheritdoc cref="SetIsRequired(IsRequired: Boolean)"/>
-    procedure SetIsRequired(IsRequired: Boolean)
+    /// <inheritdoc cref="IsRequired(IsRequired: Boolean)"/>
+    procedure IsRequired(IsRequired: Boolean)
     begin
         Required := IsRequired;
     end;
 
-    /// <inheritdoc cref="SetName(ParameterName: Text)"/>
-    procedure SetName(ParameterName: Text)
+    /// <inheritdoc cref="Name()"/>
+    procedure Name(): Text
     begin
-        Name := ParameterName;
+        exit(_Name);
+    end;
+
+    /// <inheritdoc cref="Name(ParameterName: Text)"/>
+    procedure Name(ParameterName: Text)
+    begin
+        _Name := ParameterName;
         HasName := true;
     end;
 
-    /// <inheritdoc cref="SetValue(ParameterValueVariant: Variant)"/>
-    procedure SetValue(ParameterValueVariant: Variant)
+    /// <inheritdoc cref="Value()"/>
+    procedure Value(): Variant
+    begin
+        exit(ValueVariant);
+    end;
+
+    /// <inheritdoc cref="Value(ParameterValueVariant: Variant)"/>
+    procedure Value(ParameterValueVariant: Variant)
     begin
         ValueVariant := ParameterValueVariant;
     end;

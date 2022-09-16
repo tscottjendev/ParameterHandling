@@ -207,81 +207,81 @@ codeunit 80001 "JDV Parameter Mgt."
 
     procedure Parameter(Name: Text; DefaultValue: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Text"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Code[2048]; Required: Boolean) Parameter: Codeunit "JDV Parameter - Code"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Boolean; Required: Boolean) Parameter: Codeunit "JDV Parameter - Boolean"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Integer; Required: Boolean) Parameter: Codeunit "JDV Parameter - Integer"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: DateTime; Required: Boolean) Parameter: Codeunit "JDV Parameter - DateTime"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: DateFormula; Required: Boolean) Parameter: Codeunit "JDV Parameter - DateFormula"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Decimal; Required: Boolean) Parameter: Codeunit "JDV Parameter - Decimal"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Date; Required: Boolean) Parameter: Codeunit "JDV Parameter - Date"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
 
     procedure Parameter(Name: Text; DefaultValue: Time; Required: Boolean) Parameter: Codeunit "JDV Parameter - Time"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(DefaultValue);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(DefaultValue);
+        Parameter.IsRequired(Required);
 
         exit(Parameter);
     end;
@@ -293,9 +293,9 @@ codeunit 80001 "JDV Parameter Mgt."
 
     procedure SwitchParameter(Name: Text; Required: Boolean) Parameter: Codeunit "JDV Parameter - Switch"
     begin
-        Parameter.SetName(Name);
-        Parameter.SetDefaultValue(false);
-        Parameter.SetIsRequired(Required);
+        Parameter.Name(Name);
+        Parameter.DefaultValue(false);
+        Parameter.IsRequired(Required);
         exit(Parameter);
     end;
 

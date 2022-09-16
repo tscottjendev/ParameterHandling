@@ -17,10 +17,10 @@ codeunit 80012 "JDV Parameter Handling Impl."
     procedure AddAllowedParameter(Parameter: Interface "JDV Parameter Handler")
     begin
         TestParameter(Parameter);
-        AllowedNames.Add(Parameter.GetName());
-        AllowedParameters[AllowedNames.IndexOf(Parameter.GetName())] := Parameter;
-        if Parameter.GetIsRequired() then
-            RequiredNames.Add(Parameter.GetName());
+        AllowedNames.Add(Parameter.Name());
+        AllowedParameters[AllowedNames.IndexOf(Parameter.Name())] := Parameter;
+        if Parameter.IsRequired() then
+            RequiredNames.Add(Parameter.Name());
     end;
 
     procedure Count(): Integer
@@ -35,17 +35,22 @@ codeunit 80012 "JDV Parameter Handling Impl."
         for Index := 1 to ArrayLen(Parameters) do
             if Parameters[Index].Initialized() then begin
                 TestDuplicate(Parameters[Index]);
-                AllowedNames.Add(Parameters[Index].GetName());
-                AllowedParameters[AllowedNames.IndexOf(Parameters[Index].GetName())] := Parameters[Index];
+                AllowedNames.Add(Parameters[Index].Name());
+                AllowedParameters[AllowedNames.IndexOf(Parameters[Index].Name())] := Parameters[Index];
             end;
     end;
 
-    procedure GetParameterString(): Text;
+    procedure ParameterCount(): Integer
     begin
-        exit(GetParameterString(false));
+        exit(AllowedNames.Count);
     end;
 
-    procedure GetParameterString(IncludeAll: Boolean): Text;
+    procedure ParameterString(): Text;
+    begin
+        exit(ParameterString(false));
+    end;
+
+    procedure ParameterString(IncludeAll: Boolean): Text;
     begin
         if IncludeAll then
             exit(BuildFullParameterString());
@@ -53,14 +58,9 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(ParameterStringBuilder.ToText().TrimEnd());
     end;
 
-    procedure GetParameterValue(ParameterName: Text) ParameterValue: Variant
+    procedure ParameterValue(ParameterName: Text) ParameterValue: Variant
     begin
-        exit(AllowedParameters[AllowedNames.IndexOf(ParameterName)].GetValue());
-    end;
-
-    procedure ParameterCount(): Integer
-    begin
-        exit(AllowedNames.Count);
+        exit(AllowedParameters[AllowedNames.IndexOf(ParameterName)].Value());
     end;
 
     procedure ParseParameters(IncomingParameterString: Text)
@@ -78,14 +78,14 @@ codeunit 80012 "JDV Parameter Handling Impl."
 
             ReceivedNames.Add(ParameterName);
 
-            ParameterValueVariant := ParseParameterValue(GetValuePart(Part, ParameterName));
-            SetParameterValue(ParameterName, ParameterValueVariant);
+            ParameterValueVariant := ParseParameterValue(ValuePart(Part, ParameterName));
+            ParameterValue(ParameterName, ParameterValueVariant);
 
             ParameterTerm := BuildParameter(ParameterName, ParameterValueVariant);
             UpdateParameterString(ParameterTerm);
 
-            Part := GetNextPart(IncomingParameterString, ParameterTerm);
-        until (GetParameterString() = IncomingParameterString);
+            Part := NextPart(IncomingParameterString, ParameterTerm);
+        until (ParameterString() = IncomingParameterString);
 
         TestRequiredParameters();
     end;
@@ -101,9 +101,9 @@ codeunit 80012 "JDV Parameter Handling Impl."
             AllowedParameters[Index].Convert();
             if AllowedParameters[Index].Initialized() then begin
                 StringBuilder.Append(ParameterIdentifier());
-                StringBuilder.Append(AllowedParameters[Index].GetName());
+                StringBuilder.Append(AllowedParameters[Index].Name());
                 StringBuilder.Append(ParameterSeparator());
-                StringBuilder.Append(Format(AllowedParameters[Index].GetValue()));
+                StringBuilder.Append(Format(AllowedParameters[Index].Value()));
                 StringBuilder.Append(ParameterSeparator());
             end;
         end;
@@ -121,16 +121,6 @@ codeunit 80012 "JDV Parameter Handling Impl."
         PartBuilder.Append(Format(ParameterValueVariant));
 
         exit(PartBuilder.ToText().TrimEnd());
-    end;
-
-    local procedure GetNextPart(Part: Text; Parameter: Text): Text
-    begin
-        exit(Part.Substring(Part.IndexOf(Parameter) + StrLen(Parameter)).Trim());
-    end;
-
-    local procedure GetValuePart(Part: Text; ParameterName: Text): Text
-    begin
-        exit(Part.Substring(Part.IndexOf(ParameterName) + StrLen(ParameterName) + 1));
     end;
 
     local procedure IsAlphabeticCharacter(Character: Char): Boolean
@@ -159,6 +149,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(IsValidCharacter(Character));
     end;
 
+    local procedure NextPart(Part: Text; Parameter: Text): Text
+    begin
+        exit(Part.Substring(Part.IndexOf(Parameter) + StrLen(Parameter)).Trim());
+    end;
+
     local procedure ParameterDelimiter(): Text
     begin
         exit(ParameterSeparator() + ParameterIdentifier());
@@ -176,6 +171,15 @@ codeunit 80012 "JDV Parameter Handling Impl."
         ParameterSeparatorTxt: Label ' ', Locked = true;
     begin
         exit(ParameterSeparatorTxt);
+    end;
+
+    local procedure ParameterValue(Name: Text; ValueVariant: Variant)
+    var
+        Parameter: Interface "JDV Parameter Handler";
+    begin
+        Parameter := AllowedParameters[AllowedNames.IndexOf(Name)];
+        Parameter.Value(ValueVariant);
+        Parameter.Convert();
     end;
 
     local procedure ParseParameterName(ParameterString: Text): Text
@@ -219,15 +223,6 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(ValueBuilder.ToText());
     end;
 
-    local procedure SetParameterValue(Name: Text; ValueVariant: Variant)
-    var
-        Parameter: Interface "JDV Parameter Handler";
-    begin
-        Parameter := AllowedParameters[AllowedNames.IndexOf(Name)];
-        Parameter.SetValue(ValueVariant);
-        Parameter.Convert();
-    end;
-
     local procedure TestAllowed(ParameterName: Text)
     var
         NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
@@ -248,8 +243,8 @@ codeunit 80012 "JDV Parameter Handling Impl."
     var
         DuplicateParameterErr: Label 'Parameter ''%1'' can only be specified once.', Comment = '%1 is the parameter name';
     begin
-        if AllowedNames.Contains(Parameter.GetName()) then
-            Error(DuplicateParameterErr, Parameter.GetName());
+        if AllowedNames.Contains(Parameter.Name()) then
+            Error(DuplicateParameterErr, Parameter.Name());
     end;
 
     local procedure TestInitialized(Parameter: Interface "JDV Parameter Handler")
@@ -289,5 +284,10 @@ codeunit 80012 "JDV Parameter Handling Impl."
     begin
         ParameterStringBuilder.Append(ParameterTerm);
         ParameterStringBuilder.Append(ParameterSeparator());
+    end;
+
+    local procedure ValuePart(Part: Text; ParameterName: Text): Text
+    begin
+        exit(Part.Substring(Part.IndexOf(ParameterName) + StrLen(ParameterName) + 1));
     end;
 }
