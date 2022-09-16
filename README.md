@@ -3,8 +3,8 @@ This extension has been created to handle the parameter string that can be passe
 
 If you have comments, suggestions, pull requests let me know.
 
-**NOTE:** this is in its infancy so there may be radical changes as it matures.
-**NOTE:** this is currently in the custom dev range (80000 - 80049) it will be moved to an appSource range in the future.
+- **NOTE:** this is in its infancy so there may be radical changes as it matures.
+- **NOTE:** this is currently in the custom dev range (80000 - 80049) it will be moved to an appSource range in the future.
 
 ## Usage
 ### Parameter Types
@@ -22,7 +22,4 @@ Simply pass the provided parameter list to the the `ParseParameters` procedure. 
   - A parameter instance is not properly defined (name and default value required).
   
 ## Known Issues
-- Currently cannot properly parse a parameter value that contains a hypen other than in the first position.
-- Example
-    - `-param1 -1234` is valid.
-    - `-param2 file-name.txt` is invalid.
+- None identified
