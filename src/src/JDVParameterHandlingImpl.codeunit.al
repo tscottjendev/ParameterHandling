@@ -79,7 +79,7 @@ codeunit 80012 "JDV Parameter Handling Impl."
 
             ReceivedNames.Add(ParameterName);
 
-            ParameterValueVariant := ParseParameterValue(ParameterName, Part);
+            ParameterValueVariant := ParseParameterValue(GetValuePart(Part, ParameterName));
             SetParameterValue(ParameterName, ParameterValueVariant);
 
             Parameter := BuildParameter(ParameterName, ParameterValueVariant);
@@ -126,6 +126,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(PartBuilder.ToText().TrimEnd());
     end;
 
+    local procedure GetValuePart(Part: Text; ParameterName: Text): Text
+    begin
+        exit(Part.Substring(Part.IndexOf(ParameterName) + StrLen(ParameterName) + 1));
+    end;
+
     local procedure IsAlphabeticCharacter(Character: Char): Boolean
     begin
         exit((Character in ['A' .. 'Z'])
@@ -150,6 +155,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
             exit(IsAlphabeticCharacter(Character));
 
         exit(IsValidCharacter(Character));
+    end;
+
+    local procedure ParameterDelimiter(): Text
+    begin
+        exit(ParameterSeparator() + ParameterIdentifier());
     end;
 
     local procedure ParameterIdentifier(): Text;
@@ -186,24 +196,20 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(NameBuilder.ToText());
     end;
 
-    local procedure ParseParameterValue(PartName: Text; Part: Text): Text
+    local procedure ParseParameterValue(ValuePart: Text): Text
     var
         Index: Integer;
-        Separator: Text[2];
         ValueBuilder: TextBuilder;
     begin
-        Part := Part.Substring(Part.IndexOf(PartName) + StrLen(PartName) + 1);
-        Separator := ParameterSeparator() + ParameterIdentifier();
-
         Index := 1;
-        while (Part.Substring(Index, StrLen(Separator)) <> Separator)
-            and (Index <= StrLen(Part))
+        while (ValuePart.Substring(Index, StrLen(ParameterDelimiter())) <> ParameterDelimiter())
+            and (Index <= StrLen(ValuePart))
         do begin
-            ValueBuilder.Append(Part[Index]);
+            ValueBuilder.Append(ValuePart[Index]);
             Index += 1;
 
-            if Index = StrLen(Part) then begin
-                ValueBuilder.Append(Part[Index]);
+            if Index = StrLen(ValuePart) then begin
+                ValueBuilder.Append(ValuePart[Index]);
                 exit(ValueBuilder.ToText());
             end;
         end;
