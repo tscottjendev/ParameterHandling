@@ -12,7 +12,7 @@ codeunit 80012 "JDV Parameter Handling Impl."
         AllowedNames: List of [Text];
         ReceivedNames: List of [Text];
         RequiredNames: List of [Text];
-        ParameterString: Text;
+        ParameterStringBuilder: TextBuilder;
 
     procedure AddAllowedParameter(Parameter: Interface "JDV Parameter Handler")
     begin
@@ -50,7 +50,7 @@ codeunit 80012 "JDV Parameter Handling Impl."
         if IncludeAll then
             exit(BuildFullParameterString());
 
-        exit(ParameterString);
+        exit(ParameterStringBuilder.ToText().TrimEnd());
     end;
 
     procedure GetParameterValue(ParameterName: Text) ParameterValue: Variant
@@ -63,15 +63,14 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(AllowedNames.Count);
     end;
 
-    procedure ParseParameters(NewParameterString: Text)
+    procedure ParseParameters(IncomingParameterString: Text)
     var
-        ParameterStringBuilder: TextBuilder;
         ParameterValueVariant: Variant;
         ParameterName: Text;
-        Parameter: Text;
+        ParameterTerm: Text;
         Part: Text;
     begin
-        Part := NewParameterString.Trim();
+        Part := IncomingParameterString.Trim();
         repeat
             ParameterName := ParseParameterName(Part);
             TestAllowed(ParameterName);
@@ -82,13 +81,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
             ParameterValueVariant := ParseParameterValue(GetValuePart(Part, ParameterName));
             SetParameterValue(ParameterName, ParameterValueVariant);
 
-            Parameter := BuildParameter(ParameterName, ParameterValueVariant);
-            ParameterStringBuilder.Append(Parameter);
-            ParameterStringBuilder.Append(ParameterSeparator());
+            ParameterTerm := BuildParameter(ParameterName, ParameterValueVariant);
+            UpdateParameterString(ParameterTerm);
 
-            Part := NewParameterString.Substring(NewParameterString.IndexOf(Parameter) + StrLen(Parameter)).Trim();
-        until (ParameterStringBuilder.ToText().TrimEnd() = NewParameterString);
-        ParameterString := ParameterStringBuilder.ToText().TrimEnd();
+            Part := GetNextPart(IncomingParameterString, ParameterTerm);
+        until (GetParameterString() = IncomingParameterString);
 
         TestRequiredParameters();
     end;
@@ -124,6 +121,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
         PartBuilder.Append(Format(ParameterValueVariant));
 
         exit(PartBuilder.ToText().TrimEnd());
+    end;
+
+    local procedure GetNextPart(Part: Text; Parameter: Text): Text
+    begin
+        exit(Part.Substring(Part.IndexOf(Parameter) + StrLen(Parameter)).Trim());
     end;
 
     local procedure GetValuePart(Part: Text; ParameterName: Text): Text
@@ -281,5 +283,11 @@ codeunit 80012 "JDV Parameter Handling Impl."
         if not ParameterString.StartsWith(ParameterIdentifier()) then
             Error(InvalidParameterStringErr, ParameterString);
 
+    end;
+
+    local procedure UpdateParameterString(ParameterTerm: Text)
+    begin
+        ParameterStringBuilder.Append(ParameterTerm);
+        ParameterStringBuilder.Append(ParameterSeparator());
     end;
 }
