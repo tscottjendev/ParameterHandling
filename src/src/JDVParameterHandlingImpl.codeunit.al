@@ -12,7 +12,7 @@ codeunit 80012 "JDV Parameter Handling Impl."
         AllowedNames: List of [Text];
         ReceivedNames: List of [Text];
         RequiredNames: List of [Text];
-        ParameterString: Text;
+        ParameterStringBuilder: TextBuilder;
 
     procedure AddAllowedParameter(Parameter: Interface "JDV Parameter Handler")
     begin
@@ -50,7 +50,7 @@ codeunit 80012 "JDV Parameter Handling Impl."
         if IncludeAll then
             exit(BuildFullParameterString());
 
-        exit(ParameterString);
+        exit(ParameterStringBuilder.ToText().TrimEnd());
     end;
 
     procedure GetParameterValue(ParameterName: Text) ParameterValue: Variant
@@ -63,48 +63,32 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(AllowedNames.Count);
     end;
 
-    procedure ParseParameters(NewParameterString: Text)
+    procedure ParseParameters(IncomingParameterString: Text)
     var
-        PartBuilder: TextBuilder;
-        ParameterStringBuilder: TextBuilder;
-        ParameterName: Text;
         ParameterValueVariant: Variant;
-        Parameter: Text;
+        ParameterName: Text;
+        ParameterTerm: Text;
         Part: Text;
-        NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
-        DuplicateInStringErr: Label 'Parameter ''%1'' appears more than once in the parameter string.', Comment = '%1 is parameter name';
     begin
-        Part := NewParameterString.Trim();
+        Part := IncomingParameterString.Trim();
         repeat
-            PartBuilder.Clear();
             ParameterName := ParseParameterName(Part);
-            if not AllowedNames.Contains(ParameterName) then
-                Error(NotRecognizedErr, ParameterName);
-
-            if ReceivedNames.Contains(ParameterName) then
-                Error(DuplicateInStringErr, ParameterName);
+            TestAllowed(ParameterName);
+            TestDuplicate(ParameterName);
 
             ReceivedNames.Add(ParameterName);
 
-            ParameterValueVariant := ParseParameterValue(ParameterName, Part);
+            ParameterValueVariant := ParseParameterValue(GetValuePart(Part, ParameterName));
             SetParameterValue(ParameterName, ParameterValueVariant);
 
-            PartBuilder.Append(ParameterIdentifier());
-            PartBuilder.Append(ParameterName);
-            PartBuilder.Append(ParameterSeparator());
-            PartBuilder.Append(Format(ParameterValueVariant));
+            ParameterTerm := BuildParameter(ParameterName, ParameterValueVariant);
+            UpdateParameterString(ParameterTerm);
 
-            Parameter := PartBuilder.ToText().TrimEnd();
-            ParameterStringBuilder.Append(Parameter);
-            ParameterStringBuilder.Append(ParameterSeparator());
-
-            Part := NewParameterString.Substring(NewParameterString.IndexOf(Parameter) + StrLen(Parameter)).Trim();
-        until (ParameterStringBuilder.ToText().TrimEnd() = NewParameterString);
-        ParameterString := ParameterStringBuilder.ToText().TrimEnd();
+            Part := GetNextPart(IncomingParameterString, ParameterTerm);
+        until (GetParameterString() = IncomingParameterString);
 
         TestRequiredParameters();
     end;
-
 
     local procedure BuildFullParameterString(): Text
     var
@@ -127,17 +111,57 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(StringBuilder.ToText().TrimEnd());
     end;
 
+    local procedure BuildParameter(ParameterName: Text; ParameterValueVariant: Variant): Text
+    var
+        PartBuilder: TextBuilder;
+    begin
+        PartBuilder.Append(ParameterIdentifier());
+        PartBuilder.Append(ParameterName);
+        PartBuilder.Append(ParameterSeparator());
+        PartBuilder.Append(Format(ParameterValueVariant));
+
+        exit(PartBuilder.ToText().TrimEnd());
+    end;
+
+    local procedure GetNextPart(Part: Text; Parameter: Text): Text
+    begin
+        exit(Part.Substring(Part.IndexOf(Parameter) + StrLen(Parameter)).Trim());
+    end;
+
+    local procedure GetValuePart(Part: Text; ParameterName: Text): Text
+    begin
+        exit(Part.Substring(Part.IndexOf(ParameterName) + StrLen(ParameterName) + 1));
+    end;
+
+    local procedure IsAlphabeticCharacter(Character: Char): Boolean
+    begin
+        exit((Character in ['A' .. 'Z'])
+            or (Character in ['a' .. 'z']));
+    end;
+
+    local procedure IsNumericCharacter(Character: Char): Boolean
+    begin
+        exit((Character in ['0' .. '9']));
+    end;
+
+    local procedure IsValidCharacter(Character: Char): Boolean
+    begin
+        exit((Character = '_')
+            or IsAlphabeticCharacter(Character)
+            or IsNumericCharacter(Character));
+    end;
+
     local procedure IsValidParameterNameCharacter(Character: Char; IsFirstCharacter: Boolean): Boolean
     begin
-        if (Character = '_')
-            or (Character in ['A' .. 'Z'])
-            or (Character in ['a' .. 'z'])
-            or ((Character in ['0' .. '9'])
-                and (not IsFirstCharacter))
-        then
-            exit(true);
+        if IsFirstCharacter then
+            exit(IsAlphabeticCharacter(Character));
 
-        exit(false);
+        exit(IsValidCharacter(Character));
+    end;
+
+    local procedure ParameterDelimiter(): Text
+    begin
+        exit(ParameterSeparator() + ParameterIdentifier());
     end;
 
     local procedure ParameterIdentifier(): Text;
@@ -154,49 +178,40 @@ codeunit 80012 "JDV Parameter Handling Impl."
         exit(ParameterSeparatorTxt);
     end;
 
-    local procedure ParseParameterName(Part: Text): Text
+    local procedure ParseParameterName(ParameterString: Text): Text
     var
-        PartBuilder: TextBuilder;
+        NameBuilder: TextBuilder;
         Character: Char;
         Index: Integer;
-        InvalidParameterStringErr: Label 'Invalid parameter string - ''%1''', Comment = '%1 is the parameter string';
     begin
-        if not Part.StartsWith(ParameterIdentifier()) then
-            Error(InvalidParameterStringErr, Part);
+        TestValidParameterString(ParameterString);
 
-        for Index := 1 to StrLen(Part) do begin
-            Character := Part[Index];
-            if Character <> ParameterIdentifier() then
-                if IsValidParameterNameCharacter(Character, Index = 2) then
-                    PartBuilder.Append(Character);
+        for Index := 1 to StrLen(ParameterString) do begin
+            Character := ParameterString[Index];
+            if IsValidParameterNameCharacter(Character, Index = 2) then
+                NameBuilder.Append(Character);
 
-            if (Character = ParameterSeparator())
-                or (Index = StrLen(Part))
-            then
-                exit(PartBuilder.ToText());
+            if Character = ParameterSeparator() then
+                exit(NameBuilder.ToText());
         end;
 
-        Error(InvalidParameterStringErr, Part);
+        exit(NameBuilder.ToText());
     end;
 
-    local procedure ParseParameterValue(PartName: Text; Part: Text): Text
+    local procedure ParseParameterValue(ValuePart: Text): Text
     var
         Index: Integer;
-        Separator: Text[2];
         ValueBuilder: TextBuilder;
     begin
-        Part := Part.Substring(Part.IndexOf(PartName) + StrLen(PartName) + 1);
-        Separator := ParameterSeparator() + ParameterIdentifier();
-
         Index := 1;
-        while (Part.Substring(Index, StrLen(Separator)) <> Separator)
-            and (Index <= StrLen(Part))
+        while (ValuePart.Substring(Index, StrLen(ParameterDelimiter())) <> ParameterDelimiter())
+            and (Index <= StrLen(ValuePart))
         do begin
-            ValueBuilder.Append(Part[Index]);
+            ValueBuilder.Append(ValuePart[Index]);
             Index += 1;
 
-            if Index = StrLen(Part) then begin
-                ValueBuilder.Append(Part[Index]);
+            if Index = StrLen(ValuePart) then begin
+                ValueBuilder.Append(ValuePart[Index]);
                 exit(ValueBuilder.ToText());
             end;
         end;
@@ -211,6 +226,22 @@ codeunit 80012 "JDV Parameter Handling Impl."
         Parameter := AllowedParameters[AllowedNames.IndexOf(Name)];
         Parameter.SetValue(ValueVariant);
         Parameter.Convert();
+    end;
+
+    local procedure TestAllowed(ParameterName: Text)
+    var
+        NotRecognizedErr: Label 'Parameter ''%1'' is not a recognized parameter.', Comment = '%1 is parameter name';
+    begin
+        if not AllowedNames.Contains(ParameterName) then
+            Error(NotRecognizedErr, ParameterName);
+    end;
+
+    local procedure TestDuplicate(ParameterName: Text)
+    var
+        DuplicateInStringErr: Label 'Parameter ''%1'' appears more than once in the parameter string.', Comment = '%1 is parameter name';
+    begin
+        if ReceivedNames.Contains(ParameterName) then
+            Error(DuplicateInStringErr, ParameterName);
     end;
 
     local procedure TestDuplicate(Parameter: Interface "JDV Parameter Handler")
@@ -243,5 +274,20 @@ codeunit 80012 "JDV Parameter Handling Impl."
         foreach Name in RequiredNames do
             if not ReceivedNames.Contains(Name) then
                 Error(RequiredParameterMissingErr, Name);
+    end;
+
+    local procedure TestValidParameterString(ParameterString: Text)
+    var
+        InvalidParameterStringErr: Label 'Invalid parameter string - ''%1''', Comment = '%1 is the parameter string';
+    begin
+        if not ParameterString.StartsWith(ParameterIdentifier()) then
+            Error(InvalidParameterStringErr, ParameterString);
+
+    end;
+
+    local procedure UpdateParameterString(ParameterTerm: Text)
+    begin
+        ParameterStringBuilder.Append(ParameterTerm);
+        ParameterStringBuilder.Append(ParameterSeparator());
     end;
 }

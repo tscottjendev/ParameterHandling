@@ -4,5 +4,6 @@
         "${UICop}",
         "${PerTenantExtensionCop}",
         "${analyzerFolder}BusinessCentral.LinterCop.dll"
-    ]
+    ],
+    "al.ruleSetPath": "./.ruleset/parameterhandling.ruleset.json"
 }
