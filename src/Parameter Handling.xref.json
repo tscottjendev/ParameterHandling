@@ -2,6 +2,11 @@
   "Links": [
     {
       "Kind": "References",
+      "SourceNodeId": "JDVParameterFactoryImpl@JDV Parameter Factory@LocalVariable",
+      "TargetNodeId": "JDV Parameter Factory Impl.@@Codeunit"
+    },
+    {
+      "Kind": "References",
       "SourceNodeId": "JDVParameterHandlingImpl@JDV Parameter Handling@GlobalVariable",
       "TargetNodeId": "JDV Parameter Handling Impl.@@Codeunit"
     },
@@ -132,13 +137,13 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgtImpl@JDV Parameter Mgt.@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt. Impl.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverterImpl@JDV Param. Type Converter@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter Impl@@Codeunit"
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Boolean@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Boolean@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -197,8 +202,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Code@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Code@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -252,8 +257,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Date@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Date@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -307,8 +312,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - DateFormula@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - DateFormula@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -362,8 +367,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - DateTime@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - DateTime@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -417,8 +422,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Decimal@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Decimal@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -472,8 +477,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Integer@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Integer@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -527,8 +532,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Switch@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Switch@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -587,8 +592,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Text@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Text@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -642,8 +647,8 @@
     },
     {
       "Kind": "References",
-      "SourceNodeId": "JDVParameterMgt@JDV Parameter - Time@LocalVariable",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "SourceNodeId": "JDVParamTypeConverter@JDV Parameter - Time@LocalVariable",
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "References",
@@ -694,6 +699,301 @@
       "Kind": "References",
       "SourceNodeId": "Value@JDV Parameter - Time@Method",
       "TargetNodeId": "ValueVariant@JDV Parameter - Time@GlobalVariable"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "OnRun@JDV Parameter Factory@Method",
+      "TargetNodeId": "Error@Dialog@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "BooleanParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "CodeParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "CodeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateFormulaParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "DateFormulaParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "DateParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateTimeParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "DateTimeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DecimalParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "DecimalParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "IntegerParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "IntegerParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "SwitchParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "SwitchParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "TextParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "TextParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "TimeParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "TimeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "OnRun@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Error@Dialog@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "CodeParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "CodeParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "CodeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateFormulaParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Evaluate@System@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateFormulaParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateFormulaParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DateFormulaParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DateTimeParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "DecimalParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "IntegerParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Text@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Text@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Text@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Code@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Code@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Code@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Boolean@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Boolean@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Boolean@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Integer@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Integer@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Integer@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - DateTime@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - DateTime@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - DateTime@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - DateFormula@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - DateFormula@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - DateFormula@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Decimal@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Decimal@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Decimal@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Date@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Date@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Date@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Time@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Time@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "Parameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Time@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "SwitchParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "SwitchParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "SwitchParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter - Switch@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "SwitchParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Switch@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "SwitchParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "IsRequired@JDV Parameter - Switch@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "TextParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "TextParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "TextParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "TimeParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "TimeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Calls",
+      "SourceNodeId": "TimeParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
     },
     {
       "Kind": "Calls",
@@ -1182,388 +1482,103 @@
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "OnRun@JDV Parameter Mgt.@Method",
+      "SourceNodeId": "OnRun@JDV Param. Type Converter@Method",
       "TargetNodeId": "Error@Dialog@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "BooleanParameter@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToBoolean@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToBoolean@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "CodeParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "CodeParameter@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToCode@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToCode@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToBoolean@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToBoolean@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToDate@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToDate@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToCode@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToCode@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToDateFormula@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToDateFormula@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDate@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToDate@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToDateTime@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToDateTime@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDateFormula@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToDecimal@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToDecimal@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDateTime@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToDateTime@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToInteger@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToInteger@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDecimal@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToDecimal@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToText@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToText@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToInteger@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToInteger@JDV Parameter Mgt. Impl.@Method"
+      "SourceNodeId": "ConvertToTime@JDV Param. Type Converter@Method",
+      "TargetNodeId": "ConvertToTime@JDV Param. Type Converter Impl@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToText@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToText@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "ConvertToTime@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "ConvertToTime@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateFormulaParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DateParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "IntegerParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "IntegerParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateTimeParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DateTimeParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DecimalParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DecimalParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "SwitchParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "SwitchParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "TextParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "TextParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "TimeParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "TimeParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "OnRun@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "OnRun@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Error@Dialog@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "CodeParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "CodeParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "CodeParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "ConvertToBoolean@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToBoolean@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToCode@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToCode@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDate@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToDate@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToDateFormula@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDateTime@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToDateTime@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToDecimal@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToDecimal@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToInteger@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToInteger@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToText@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToText@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
     },
     {
       "Kind": "Calls",
-      "SourceNodeId": "ConvertToTime@JDV Parameter Mgt. Impl.@Method",
+      "SourceNodeId": "ConvertToTime@JDV Param. Type Converter Impl@Method",
       "TargetNodeId": "Evaluate@System@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Evaluate@System@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DateTimeParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "DecimalParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "IntegerParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Text@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Text@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Text@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Code@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Code@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Code@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Boolean@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Boolean@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Boolean@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Integer@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Integer@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Integer@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - DateTime@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - DateTime@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - DateTime@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - DateFormula@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - DateFormula@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - DateFormula@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Decimal@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Decimal@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Decimal@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Date@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Date@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Date@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Time@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Time@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Time@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "SwitchParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "SwitchParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "SwitchParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter - Switch@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "SwitchParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Switch@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "SwitchParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IsRequired@JDV Parameter - Switch@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "TextParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "TextParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "TextParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "TimeParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "TimeParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Calls",
-      "SourceNodeId": "TimeParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
     },
     {
       "Kind": "Calls",
@@ -1578,12 +1593,12 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Boolean@Method",
-      "TargetNodeId": "ConvertToBoolean@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToBoolean@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Code@Method",
-      "TargetNodeId": "ConvertToCode@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToCode@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1593,7 +1608,7 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Date@Method",
-      "TargetNodeId": "ConvertToDate@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToDate@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1603,7 +1618,7 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - DateFormula@Method",
-      "TargetNodeId": "ConvertToDateFormula@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToDateFormula@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1613,7 +1628,7 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - DateTime@Method",
-      "TargetNodeId": "ConvertToDateTime@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToDateTime@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1623,7 +1638,7 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Decimal@Method",
-      "TargetNodeId": "ConvertToDecimal@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToDecimal@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1633,7 +1648,7 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Integer@Method",
-      "TargetNodeId": "ConvertToInteger@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToInteger@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1648,12 +1663,12 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Switch@Method",
-      "TargetNodeId": "ConvertToBoolean@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToBoolean@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Text@Method",
-      "TargetNodeId": "ConvertToText@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToText@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1663,7 +1678,7 @@
     {
       "Kind": "Calls",
       "SourceNodeId": "Convert@JDV Parameter - Time@Method",
-      "TargetNodeId": "ConvertToTime@JDV Parameter Mgt.@Method"
+      "TargetNodeId": "ConvertToTime@JDV Param. Type Converter@Method"
     },
     {
       "Kind": "Calls",
@@ -1728,6 +1743,16 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Parameter Handling@@Module",
+      "TargetNodeId": "JDV Parameter Factory@@Codeunit"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "Parameter Handling@@Module",
+      "TargetNodeId": "JDV Parameter Factory Impl.@@Codeunit"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "Parameter Handling@@Module",
       "TargetNodeId": "JDV Parameter Handling@@Codeunit"
     },
     {
@@ -1738,17 +1763,17 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Parameter Handling@@Module",
-      "TargetNodeId": "JDV Parameter Mgt.@@Codeunit"
+      "TargetNodeId": "JDV Param. Type Converter Impl@@Codeunit"
     },
     {
       "Kind": "Contains",
       "SourceNodeId": "Parameter Handling@@Module",
-      "TargetNodeId": "JDV Parameter Mgt. Impl.@@Codeunit"
+      "TargetNodeId": "JDV Param. Type Converter@@Codeunit"
     },
     {
       "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Handling@@Codeunit",
-      "TargetNodeId": "OnRun@JDV Parameter Handling@Method"
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "OnRun@JDV Parameter Factory@Method"
     },
     {
       "Kind": "Contains",
@@ -1759,6 +1784,336 @@
       "Kind": "Contains",
       "SourceNodeId": "System@@Module",
       "TargetNodeId": "Dialog@@Class"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "BooleanParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "Name@JDV Parameter Factory@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory@ReturnValue"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "JDVParameterFactoryImpl@JDV Parameter Factory@LocalVariable"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "BooleanParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "Required@JDV Parameter Factory@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "CodeParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "CodeParameter@JDV Parameter Factory@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter Factory@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "CodeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "DateFormulaParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "DateFormulaParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "DateParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "DateParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "DateTimeParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "DateTimeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "DecimalParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "DecimalParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "IntegerParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "IntegerParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "Parameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "SwitchParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "SwitchParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "TextParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "TextParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory@@Codeunit",
+      "TargetNodeId": "TimeParameter@JDV Parameter Factory@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "TimeParameter@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Factory Impl.@@Codeunit",
+      "TargetNodeId": "OnRun@JDV Parameter Factory Impl.@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Name@JDV Parameter Factory Impl.@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Parameter@JDV Parameter Factory Impl.@ReturnValue"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "BooleanParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "Required@JDV Parameter Factory Impl.@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "CodeParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DefaultValue@JDV Parameter Factory Impl.@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "DateFormulaParameter@JDV Parameter Factory Impl.@Method",
+      "TargetNodeId": "DateFormulaValue@JDV Parameter Factory Impl.@LocalVariable"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "System@@Class",
+      "TargetNodeId": "Evaluate@System@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "System@@Module",
+      "TargetNodeId": "System@@Class"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Text@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Text@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Text@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Text@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Text@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Text@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Code@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Code@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Code@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Code@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Code@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Code@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Boolean@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Boolean@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Boolean@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Boolean@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Boolean@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Boolean@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Integer@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Integer@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Integer@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Integer@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Integer@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Integer@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - DateTime@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - DateTime@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - DateTime@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - DateTime@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - DateTime@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - DateTime@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - DateFormula@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - DateFormula@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - DateFormula@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - DateFormula@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - DateFormula@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - DateFormula@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Decimal@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Decimal@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Decimal@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Decimal@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Decimal@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Decimal@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Date@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Date@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Date@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Date@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Date@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Date@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Time@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Time@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Time@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Time@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Time@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Time@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Switch@@Codeunit",
+      "TargetNodeId": "Name@JDV Parameter - Switch@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Switch@@Codeunit",
+      "TargetNodeId": "DefaultValue@JDV Parameter - Switch@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter - Switch@@Codeunit",
+      "TargetNodeId": "IsRequired@JDV Parameter - Switch@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Parameter Handling@@Codeunit",
+      "TargetNodeId": "OnRun@JDV Parameter Handling@Method"
     },
     {
       "Kind": "Contains",
@@ -1954,11 +2309,6 @@
       "Kind": "Contains",
       "SourceNodeId": "System@@Class",
       "TargetNodeId": "ArrayLen@System@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "System@@Module",
-      "TargetNodeId": "System@@Class"
     },
     {
       "Kind": "Contains",
@@ -2292,521 +2642,6 @@
     },
     {
       "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "OnRun@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "BooleanParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "Name@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt.@ReturnValue"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "JDVParameterMgtImpl@JDV Parameter Mgt.@LocalVariable"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "BooleanParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "Required@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "CodeParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "CodeParameter@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "CodeParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToBoolean@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToBoolean@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "BooleanText@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToBoolean@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "Value@JDV Parameter Mgt.@ReturnValue"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToBoolean@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToCode@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToCode@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "CodeValue@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToCode@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToDate@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDate@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DateText@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToDate@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToDateFormula@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDateFormula@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DateFormulaText@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToDateTime@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDateTime@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DateTimeText@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToDateTime@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToDecimal@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDecimal@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "DecimalText@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToDecimal@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToInteger@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToInteger@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "IntegerText@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToInteger@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToText@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToText@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "TextValue@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToText@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "ConvertToTime@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToTime@JDV Parameter Mgt.@Method",
-      "TargetNodeId": "TimeText@JDV Parameter Mgt.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "ConvertToTime@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "DateFormulaParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "DateParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "DateParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "IntegerParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "IntegerParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "DateTimeParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "DateTimeParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "DecimalParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "DecimalParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "SwitchParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "SwitchParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "TextParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "TextParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt.@@Codeunit",
-      "TargetNodeId": "TimeParameter@JDV Parameter Mgt.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "TimeParameter@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "TargetNodeId": "OnRun@JDV Parameter Mgt. Impl.@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Name@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Parameter@JDV Parameter Mgt. Impl.@ReturnValue"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "BooleanParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Required@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "CodeParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DefaultValue@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToBoolean@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "BooleanText@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToBoolean@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "Value@JDV Parameter Mgt. Impl.@ReturnValue"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "System@@Class",
-      "TargetNodeId": "Evaluate@System@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToCode@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "CodeValue@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDate@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DateText@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DateFormulaText@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDateTime@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DateTimeText@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToDecimal@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DecimalText@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToInteger@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "IntegerText@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToText@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "TextValue@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "ConvertToTime@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "TimeText@JDV Parameter Mgt. Impl.@Parameter"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method",
-      "TargetNodeId": "DateFormulaValue@JDV Parameter Mgt. Impl.@LocalVariable"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Text@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Text@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Text@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Text@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Text@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Text@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Code@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Code@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Code@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Code@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Code@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Code@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Boolean@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Boolean@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Boolean@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Boolean@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Boolean@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Boolean@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Integer@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Integer@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Integer@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Integer@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Integer@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Integer@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - DateTime@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - DateTime@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - DateTime@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - DateTime@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - DateTime@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - DateTime@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - DateFormula@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - DateFormula@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - DateFormula@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - DateFormula@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - DateFormula@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - DateFormula@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Decimal@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Decimal@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Decimal@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Decimal@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Decimal@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Decimal@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Date@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Date@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Date@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Date@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Date@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Date@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Time@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Time@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Time@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Time@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Time@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Time@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Switch@@Codeunit",
-      "TargetNodeId": "Name@JDV Parameter - Switch@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Switch@@Codeunit",
-      "TargetNodeId": "DefaultValue@JDV Parameter - Switch@Method"
-    },
-    {
-      "Kind": "Contains",
-      "SourceNodeId": "JDV Parameter - Switch@@Codeunit",
-      "TargetNodeId": "IsRequired@JDV Parameter - Switch@Method"
-    },
-    {
-      "Kind": "Contains",
       "SourceNodeId": "Parameter Handling@@Module",
       "TargetNodeId": "JDV ParameterType@@Enum"
     },
@@ -2862,6 +2697,211 @@
     },
     {
       "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "OnRun@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToBoolean@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToBoolean@JDV Param. Type Converter@Method",
+      "TargetNodeId": "BooleanText@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToBoolean@JDV Param. Type Converter@Method",
+      "TargetNodeId": "Value@JDV Param. Type Converter@ReturnValue"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToBoolean@JDV Param. Type Converter@Method",
+      "TargetNodeId": "JDVParamTypeConverterImpl@JDV Param. Type Converter@LocalVariable"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToBoolean@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToCode@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToCode@JDV Param. Type Converter@Method",
+      "TargetNodeId": "CodeValue@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToCode@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToDate@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDate@JDV Param. Type Converter@Method",
+      "TargetNodeId": "DateText@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToDate@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToDateFormula@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDateFormula@JDV Param. Type Converter@Method",
+      "TargetNodeId": "DateFormulaText@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToDateFormula@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToDateTime@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDateTime@JDV Param. Type Converter@Method",
+      "TargetNodeId": "DateTimeText@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToDateTime@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToDecimal@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDecimal@JDV Param. Type Converter@Method",
+      "TargetNodeId": "DecimalText@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToDecimal@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToInteger@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToInteger@JDV Param. Type Converter@Method",
+      "TargetNodeId": "IntegerText@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToInteger@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToText@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToText@JDV Param. Type Converter@Method",
+      "TargetNodeId": "TextValue@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToText@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter@@Codeunit",
+      "TargetNodeId": "ConvertToTime@JDV Param. Type Converter@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToTime@JDV Param. Type Converter@Method",
+      "TargetNodeId": "TimeText@JDV Param. Type Converter@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "ConvertToTime@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "JDV Param. Type Converter Impl@@Codeunit",
+      "TargetNodeId": "OnRun@JDV Param. Type Converter Impl@Method"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToBoolean@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "BooleanText@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToBoolean@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "Value@JDV Param. Type Converter Impl@ReturnValue"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToCode@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "CodeValue@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDate@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "DateText@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDateFormula@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "DateFormulaText@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDateTime@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "DateTimeText@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToDecimal@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "DecimalText@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToInteger@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "IntegerText@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToText@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "TextValue@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
+      "SourceNodeId": "ConvertToTime@JDV Param. Type Converter Impl@Method",
+      "TargetNodeId": "TimeText@JDV Param. Type Converter Impl@Parameter"
+    },
+    {
+      "Kind": "Contains",
       "SourceNodeId": "JDV Parameter - Boolean@@Codeunit",
       "TargetNodeId": "Required@JDV Parameter - Boolean@GlobalVariable"
     },
@@ -2898,7 +2938,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Boolean@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Boolean@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Boolean@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -2973,7 +3013,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Code@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Code@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Code@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3043,7 +3083,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Date@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Date@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Date@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3113,7 +3153,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - DateFormula@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - DateFormula@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - DateFormula@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3183,7 +3223,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - DateTime@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - DateTime@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - DateTime@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3253,7 +3293,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Decimal@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Decimal@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Decimal@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3348,7 +3388,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Integer@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Integer@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Integer@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3418,7 +3458,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Switch@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Switch@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Switch@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3488,7 +3528,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Text@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Text@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Text@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3558,7 +3598,7 @@
     {
       "Kind": "Contains",
       "SourceNodeId": "Convert@JDV Parameter - Time@Method",
-      "TargetNodeId": "JDVParameterMgt@JDV Parameter - Time@LocalVariable"
+      "TargetNodeId": "JDVParamTypeConverter@JDV Parameter - Time@LocalVariable"
     },
     {
       "Kind": "Contains",
@@ -3693,6 +3733,24 @@
     },
     {
       "Kind": "Codeunit",
+      "Id": "JDV Parameter Factory@@Codeunit",
+      "Label": "JDV Parameter Factory",
+      "Category": "Codeunit",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "1@16",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Codeunit",
+      "Id": "JDV Parameter Factory Impl.@@Codeunit",
+      "Label": "JDV Parameter Factory Impl.",
+      "Category": "Codeunit",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "1@16",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Codeunit",
       "Id": "JDV Parameter Handling@@Codeunit",
       "Label": "JDV Parameter Handling",
       "Category": "Codeunit",
@@ -3711,29 +3769,29 @@
     },
     {
       "Kind": "Codeunit",
-      "Id": "JDV Parameter Mgt.@@Codeunit",
-      "Label": "JDV Parameter Mgt.",
+      "Id": "JDV Param. Type Converter Impl@@Codeunit",
+      "Label": "JDV Param. Type Converter Impl",
       "Category": "Codeunit",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
       "Position": "1@16",
       "IsDeprecated": false
     },
     {
       "Kind": "Codeunit",
-      "Id": "JDV Parameter Mgt. Impl.@@Codeunit",
-      "Label": "JDV Parameter Mgt. Impl.",
+      "Id": "JDV Param. Type Converter@@Codeunit",
+      "Label": "JDV Param. Type Converter",
       "Category": "Codeunit",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
       "Position": "1@16",
       "IsDeprecated": false
     },
     {
       "Kind": "Method",
-      "Id": "OnRun@JDV Parameter Handling@Method",
+      "Id": "OnRun@JDV Parameter Factory@Method",
       "Label": "OnRun",
       "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterHandling.codeunit.al",
-      "Position": "7@13",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "3@13",
       "IsDeprecated": false
     },
     {
@@ -3743,6 +3801,591 @@
       "Category": "Method",
       "SourceLocation": null,
       "Position": null,
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "BooleanParameter@JDV Parameter Factory@Method",
+      "Label": "BooleanParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "8@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "Name@JDV Parameter Factory@Parameter",
+      "Label": "Name",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "8@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "ReturnValue",
+      "Id": "Parameter@JDV Parameter Factory@ReturnValue",
+      "Label": "Parameter",
+      "Category": "ReturnValue",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "8@44",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "LocalVariable",
+      "Id": "JDVParameterFactoryImpl@JDV Parameter Factory@LocalVariable",
+      "Label": "JDVParameterFactoryImpl",
+      "Category": "LocalVariable",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "10@9",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "BooleanParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "BooleanParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "10@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "Required@JDV Parameter Factory@Parameter",
+      "Label": "Required",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "15@44",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "CodeParameter@JDV Parameter Factory@Method",
+      "Label": "CodeParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "22@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DefaultValue@JDV Parameter Factory@Parameter",
+      "Label": "DefaultValue",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "22@41",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "CodeParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "CodeParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "20@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DateFormulaParameter@JDV Parameter Factory@Method",
+      "Label": "DateFormulaParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "43@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DateFormulaParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "DateFormulaParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "35@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DateParameter@JDV Parameter Factory@Method",
+      "Label": "DateParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "71@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DateParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "DateParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "61@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DateTimeParameter@JDV Parameter Factory@Method",
+      "Label": "DateTimeParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "93@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DateTimeParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "DateTimeParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "76@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DecimalParameter@JDV Parameter Factory@Method",
+      "Label": "DecimalParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "107@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DecimalParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "DecimalParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "86@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IntegerParameter@JDV Parameter Factory@Method",
+      "Label": "IntegerParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "128@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IntegerParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "IntegerParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "111@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Parameter@JDV Parameter Factory@Method",
+      "Label": "Parameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "149@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Parameter@JDV Parameter Factory Impl.@Method",
+      "Label": "Parameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "116@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "SwitchParameter@JDV Parameter Factory@Method",
+      "Label": "SwitchParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "275@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "SwitchParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "SwitchParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "242@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "TextParameter@JDV Parameter Factory@Method",
+      "Label": "TextParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "289@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "TextParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "TextParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "260@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "TimeParameter@JDV Parameter Factory@Method",
+      "Label": "TimeParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactory.codeunit.al",
+      "Position": "317@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "TimeParameter@JDV Parameter Factory Impl.@Method",
+      "Label": "TimeParameter",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "280@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "OnRun@JDV Parameter Factory Impl.@Method",
+      "Label": "OnRun",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "5@13",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "Name@JDV Parameter Factory Impl.@Parameter",
+      "Label": "Name",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "10@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "ReturnValue",
+      "Id": "Parameter@JDV Parameter Factory Impl.@ReturnValue",
+      "Label": "Parameter",
+      "Category": "ReturnValue",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "10@44",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "Required@JDV Parameter Factory Impl.@Parameter",
+      "Label": "Required",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "15@44",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DefaultValue@JDV Parameter Factory Impl.@Parameter",
+      "Label": "DefaultValue",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "20@41",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "LocalVariable",
+      "Id": "DateFormulaValue@JDV Parameter Factory Impl.@LocalVariable",
+      "Label": "DateFormulaValue",
+      "Category": "LocalVariable",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterFactoryImpl.codeunit.al",
+      "Position": "37@9",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Evaluate@System@Method",
+      "Label": "Evaluate",
+      "Category": "Method",
+      "SourceLocation": null,
+      "Position": null,
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Text@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterText.codeunit.al",
+      "Position": "62@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Text@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterText.codeunit.al",
+      "Position": "30@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Text@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterText.codeunit.al",
+      "Position": "50@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Code@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterCode.codeunit.al",
+      "Position": "62@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Code@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterCode.codeunit.al",
+      "Position": "30@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Code@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterCode.codeunit.al",
+      "Position": "50@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Boolean@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterBoolean.codeunit.al",
+      "Position": "65@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Boolean@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterBoolean.codeunit.al",
+      "Position": "33@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Boolean@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterBoolean.codeunit.al",
+      "Position": "53@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Integer@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterInteger.codeunit.al",
+      "Position": "62@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Integer@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterInteger.codeunit.al",
+      "Position": "30@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Integer@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterInteger.codeunit.al",
+      "Position": "50@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - DateTime@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateTime.codeunit.al",
+      "Position": "61@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - DateTime@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateTime.codeunit.al",
+      "Position": "29@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - DateTime@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateTime.codeunit.al",
+      "Position": "49@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - DateFormula@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateFormula.codeunit.al",
+      "Position": "67@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - DateFormula@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateFormula.codeunit.al",
+      "Position": "53@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - DateFormula@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateFormula.codeunit.al",
+      "Position": "61@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Decimal@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
+      "Position": "61@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Decimal@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
+      "Position": "29@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Decimal@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
+      "Position": "49@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Date@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
+      "Position": "61@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Date@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
+      "Position": "29@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Date@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
+      "Position": "49@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Time@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterTime.codeunit.al",
+      "Position": "62@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Time@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterTime.codeunit.al",
+      "Position": "30@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Time@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterTime.codeunit.al",
+      "Position": "50@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "Name@JDV Parameter - Switch@Method",
+      "Label": "Name",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterSwitch.codeunit.al",
+      "Position": "65@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "DefaultValue@JDV Parameter - Switch@Method",
+      "Label": "DefaultValue",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterSwitch.codeunit.al",
+      "Position": "33@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "IsRequired@JDV Parameter - Switch@Method",
+      "Label": "IsRequired",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterSwitch.codeunit.al",
+      "Position": "53@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "OnRun@JDV Parameter Handling@Method",
+      "Label": "OnRun",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterHandling.codeunit.al",
+      "Position": "7@13",
       "IsDeprecated": false
     },
     {
@@ -4664,933 +5307,6 @@
       "IsDeprecated": false
     },
     {
-      "Kind": "Method",
-      "Id": "OnRun@JDV Parameter Mgt.@Method",
-      "Label": "OnRun",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "3@13",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "BooleanParameter@JDV Parameter Mgt.@Method",
-      "Label": "BooleanParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "8@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "Name@JDV Parameter Mgt.@Parameter",
-      "Label": "Name",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "8@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "ReturnValue",
-      "Id": "Parameter@JDV Parameter Mgt.@ReturnValue",
-      "Label": "Parameter",
-      "Category": "ReturnValue",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "8@44",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "LocalVariable",
-      "Id": "JDVParameterMgtImpl@JDV Parameter Mgt.@LocalVariable",
-      "Label": "JDVParameterMgtImpl",
-      "Category": "LocalVariable",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "10@9",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "BooleanParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "BooleanParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "10@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "Required@JDV Parameter Mgt.@Parameter",
-      "Label": "Required",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "15@44",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "CodeParameter@JDV Parameter Mgt.@Method",
-      "Label": "CodeParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "22@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DefaultValue@JDV Parameter Mgt.@Parameter",
-      "Label": "DefaultValue",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "22@41",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "CodeParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "CodeParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "20@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToBoolean@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToBoolean",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "43@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "BooleanText@JDV Parameter Mgt.@Parameter",
-      "Label": "BooleanText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "43@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "ReturnValue",
-      "Id": "Value@JDV Parameter Mgt.@ReturnValue",
-      "Label": "Value",
-      "Category": "ReturnValue",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "43@51",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToBoolean@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToBoolean",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "36@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToCode@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToCode",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "50@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "CodeValue@JDV Parameter Mgt.@Parameter",
-      "Label": "CodeValue",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "50@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToCode@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToCode",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "43@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDate@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToDate",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "57@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DateText@JDV Parameter Mgt.@Parameter",
-      "Label": "DateText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "57@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDate@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToDate",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "50@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDateFormula@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToDateFormula",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "64@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DateFormulaText@JDV Parameter Mgt.@Parameter",
-      "Label": "DateFormulaText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "64@36",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToDateFormula",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "57@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDateTime@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToDateTime",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "71@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DateTimeText@JDV Parameter Mgt.@Parameter",
-      "Label": "DateTimeText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "71@33",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDateTime@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToDateTime",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "64@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDecimal@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToDecimal",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "78@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DecimalText@JDV Parameter Mgt.@Parameter",
-      "Label": "DecimalText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "78@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToDecimal@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToDecimal",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "71@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToInteger@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToInteger",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "85@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "IntegerText@JDV Parameter Mgt.@Parameter",
-      "Label": "IntegerText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "85@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToInteger@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToInteger",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "78@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToText@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToText",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "92@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "TextValue@JDV Parameter Mgt.@Parameter",
-      "Label": "TextValue",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "92@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToText@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToText",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "85@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToTime@JDV Parameter Mgt.@Method",
-      "Label": "ConvertToTime",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "99@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "TimeText@JDV Parameter Mgt.@Parameter",
-      "Label": "TimeText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "99@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "ConvertToTime@JDV Parameter Mgt. Impl.@Method",
-      "Label": "ConvertToTime",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "92@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DateFormulaParameter@JDV Parameter Mgt.@Method",
-      "Label": "DateFormulaParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "106@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DateFormulaParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "DateFormulaParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "99@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DateParameter@JDV Parameter Mgt.@Method",
-      "Label": "DateParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "134@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DateParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "DateParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "125@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IntegerParameter@JDV Parameter Mgt.@Method",
-      "Label": "IntegerParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "141@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IntegerParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "IntegerParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "175@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DateTimeParameter@JDV Parameter Mgt.@Method",
-      "Label": "DateTimeParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "163@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DateTimeParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "DateTimeParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "140@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DecimalParameter@JDV Parameter Mgt.@Method",
-      "Label": "DecimalParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "177@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DecimalParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "DecimalParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "150@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Parameter@JDV Parameter Mgt.@Method",
-      "Label": "Parameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "212@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Parameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "Parameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "180@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "SwitchParameter@JDV Parameter Mgt.@Method",
-      "Label": "SwitchParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "338@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "SwitchParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "SwitchParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "306@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "TextParameter@JDV Parameter Mgt.@Method",
-      "Label": "TextParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "352@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "TextParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "TextParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "324@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "TimeParameter@JDV Parameter Mgt.@Method",
-      "Label": "TimeParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgt.codeunit.al",
-      "Position": "380@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "TimeParameter@JDV Parameter Mgt. Impl.@Method",
-      "Label": "TimeParameter",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "344@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "OnRun@JDV Parameter Mgt. Impl.@Method",
-      "Label": "OnRun",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "5@13",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "Name@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "Name",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "10@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "ReturnValue",
-      "Id": "Parameter@JDV Parameter Mgt. Impl.@ReturnValue",
-      "Label": "Parameter",
-      "Category": "ReturnValue",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "10@44",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "Required@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "Required",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "15@44",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DefaultValue@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "DefaultValue",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "20@41",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "BooleanText@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "BooleanText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "36@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "ReturnValue",
-      "Id": "Value@JDV Parameter Mgt. Impl.@ReturnValue",
-      "Label": "Value",
-      "Category": "ReturnValue",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "36@51",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Evaluate@System@Method",
-      "Label": "Evaluate",
-      "Category": "Method",
-      "SourceLocation": null,
-      "Position": null,
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "CodeValue@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "CodeValue",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "43@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DateText@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "DateText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "50@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DateFormulaText@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "DateFormulaText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "57@36",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DateTimeText@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "DateTimeText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "64@33",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "DecimalText@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "DecimalText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "71@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "IntegerText@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "IntegerText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "78@32",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "TextValue@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "TextValue",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "85@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Parameter",
-      "Id": "TimeText@JDV Parameter Mgt. Impl.@Parameter",
-      "Label": "TimeText",
-      "Category": "Parameter",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "92@29",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "LocalVariable",
-      "Id": "DateFormulaValue@JDV Parameter Mgt. Impl.@LocalVariable",
-      "Label": "DateFormulaValue",
-      "Category": "LocalVariable",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParameterMgtImpl.codeunit.al",
-      "Position": "101@9",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Text@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterText.codeunit.al",
-      "Position": "62@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Text@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterText.codeunit.al",
-      "Position": "30@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Text@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterText.codeunit.al",
-      "Position": "50@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Code@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterCode.codeunit.al",
-      "Position": "62@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Code@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterCode.codeunit.al",
-      "Position": "30@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Code@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterCode.codeunit.al",
-      "Position": "50@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Boolean@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterBoolean.codeunit.al",
-      "Position": "65@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Boolean@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterBoolean.codeunit.al",
-      "Position": "33@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Boolean@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterBoolean.codeunit.al",
-      "Position": "53@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Integer@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterInteger.codeunit.al",
-      "Position": "62@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Integer@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterInteger.codeunit.al",
-      "Position": "30@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Integer@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterInteger.codeunit.al",
-      "Position": "50@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - DateTime@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateTime.codeunit.al",
-      "Position": "61@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - DateTime@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateTime.codeunit.al",
-      "Position": "29@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - DateTime@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateTime.codeunit.al",
-      "Position": "49@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - DateFormula@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateFormula.codeunit.al",
-      "Position": "67@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - DateFormula@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateFormula.codeunit.al",
-      "Position": "53@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - DateFormula@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateFormula.codeunit.al",
-      "Position": "61@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Decimal@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
-      "Position": "61@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Decimal@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
-      "Position": "29@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Decimal@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
-      "Position": "49@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Date@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
-      "Position": "61@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Date@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
-      "Position": "29@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Date@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
-      "Position": "49@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Time@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterTime.codeunit.al",
-      "Position": "62@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Time@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterTime.codeunit.al",
-      "Position": "30@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Time@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterTime.codeunit.al",
-      "Position": "50@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "Name@JDV Parameter - Switch@Method",
-      "Label": "Name",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterSwitch.codeunit.al",
-      "Position": "65@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "DefaultValue@JDV Parameter - Switch@Method",
-      "Label": "DefaultValue",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterSwitch.codeunit.al",
-      "Position": "33@15",
-      "IsDeprecated": false
-    },
-    {
-      "Kind": "Method",
-      "Id": "IsRequired@JDV Parameter - Switch@Method",
-      "Label": "IsRequired",
-      "Category": "Method",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterSwitch.codeunit.al",
-      "Position": "53@15",
-      "IsDeprecated": false
-    },
-    {
       "Kind": "Enum",
       "Id": "JDV ParameterType@@Enum",
       "Label": "JDV ParameterType",
@@ -5690,6 +5406,375 @@
       "IsDeprecated": false
     },
     {
+      "Kind": "Method",
+      "Id": "OnRun@JDV Param. Type Converter@Method",
+      "Label": "OnRun",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "5@13",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToBoolean@JDV Param. Type Converter@Method",
+      "Label": "ConvertToBoolean",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "10@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "BooleanText@JDV Param. Type Converter@Parameter",
+      "Label": "BooleanText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "10@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "ReturnValue",
+      "Id": "Value@JDV Param. Type Converter@ReturnValue",
+      "Label": "Value",
+      "Category": "ReturnValue",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "10@51",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "LocalVariable",
+      "Id": "JDVParamTypeConverterImpl@JDV Param. Type Converter@LocalVariable",
+      "Label": "JDVParamTypeConverterImpl",
+      "Category": "LocalVariable",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "12@9",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToBoolean@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToBoolean",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "10@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToCode@JDV Param. Type Converter@Method",
+      "Label": "ConvertToCode",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "18@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "CodeValue@JDV Param. Type Converter@Parameter",
+      "Label": "CodeValue",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "18@29",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToCode@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToCode",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "17@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDate@JDV Param. Type Converter@Method",
+      "Label": "ConvertToDate",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "25@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DateText@JDV Param. Type Converter@Parameter",
+      "Label": "DateText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "25@29",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDate@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToDate",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "24@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDateFormula@JDV Param. Type Converter@Method",
+      "Label": "ConvertToDateFormula",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "32@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DateFormulaText@JDV Param. Type Converter@Parameter",
+      "Label": "DateFormulaText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "32@36",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDateFormula@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToDateFormula",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "31@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDateTime@JDV Param. Type Converter@Method",
+      "Label": "ConvertToDateTime",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "39@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DateTimeText@JDV Param. Type Converter@Parameter",
+      "Label": "DateTimeText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "39@33",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDateTime@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToDateTime",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "38@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDecimal@JDV Param. Type Converter@Method",
+      "Label": "ConvertToDecimal",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "46@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DecimalText@JDV Param. Type Converter@Parameter",
+      "Label": "DecimalText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "46@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToDecimal@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToDecimal",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "45@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToInteger@JDV Param. Type Converter@Method",
+      "Label": "ConvertToInteger",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "53@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "IntegerText@JDV Param. Type Converter@Parameter",
+      "Label": "IntegerText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "53@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToInteger@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToInteger",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "52@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToText@JDV Param. Type Converter@Method",
+      "Label": "ConvertToText",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "60@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "TextValue@JDV Param. Type Converter@Parameter",
+      "Label": "TextValue",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "60@29",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToText@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToText",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "59@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToTime@JDV Param. Type Converter@Method",
+      "Label": "ConvertToTime",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "67@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "TimeText@JDV Param. Type Converter@Parameter",
+      "Label": "TimeText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverter.codeunit.al",
+      "Position": "67@29",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "ConvertToTime@JDV Param. Type Converter Impl@Method",
+      "Label": "ConvertToTime",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "66@15",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Method",
+      "Id": "OnRun@JDV Param. Type Converter Impl@Method",
+      "Label": "OnRun",
+      "Category": "Method",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "5@13",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "BooleanText@JDV Param. Type Converter Impl@Parameter",
+      "Label": "BooleanText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "10@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "ReturnValue",
+      "Id": "Value@JDV Param. Type Converter Impl@ReturnValue",
+      "Label": "Value",
+      "Category": "ReturnValue",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "10@51",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "CodeValue@JDV Param. Type Converter Impl@Parameter",
+      "Label": "CodeValue",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "17@29",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DateText@JDV Param. Type Converter Impl@Parameter",
+      "Label": "DateText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "24@29",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DateFormulaText@JDV Param. Type Converter Impl@Parameter",
+      "Label": "DateFormulaText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "31@36",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DateTimeText@JDV Param. Type Converter Impl@Parameter",
+      "Label": "DateTimeText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "38@33",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "DecimalText@JDV Param. Type Converter Impl@Parameter",
+      "Label": "DecimalText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "45@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "IntegerText@JDV Param. Type Converter Impl@Parameter",
+      "Label": "IntegerText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "52@32",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "TextValue@JDV Param. Type Converter Impl@Parameter",
+      "Label": "TextValue",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "59@29",
+      "IsDeprecated": false
+    },
+    {
+      "Kind": "Parameter",
+      "Id": "TimeText@JDV Param. Type Converter Impl@Parameter",
+      "Label": "TimeText",
+      "Category": "Parameter",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\JDVParamTypeConverterImpl.codeunit.al",
+      "Position": "66@29",
+      "IsDeprecated": false
+    },
+    {
       "Kind": "GlobalVariable",
       "Id": "Required@JDV Parameter - Boolean@GlobalVariable",
       "Label": "Required",
@@ -5754,8 +5839,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Boolean@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Boolean@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterBoolean.codeunit.al",
       "Position": "17@9",
@@ -5889,8 +5974,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Code@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Code@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterCode.codeunit.al",
       "Position": "18@9",
@@ -6015,8 +6100,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Date@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Date@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
       "Position": "17@9",
@@ -6141,8 +6226,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - DateFormula@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - DateFormula@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateFormula.codeunit.al",
       "Position": "17@9",
@@ -6267,8 +6352,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - DateTime@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - DateTime@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDateTime.codeunit.al",
       "Position": "17@9",
@@ -6393,8 +6478,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Decimal@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Decimal@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
       "Position": "17@9",
@@ -6564,8 +6649,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Integer@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Integer@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterInteger.codeunit.al",
       "Position": "18@9",
@@ -6690,8 +6775,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Switch@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Switch@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterSwitch.codeunit.al",
       "Position": "18@9",
@@ -6816,8 +6901,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Text@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Text@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterText.codeunit.al",
       "Position": "18@9",
@@ -6942,8 +7027,8 @@
     },
     {
       "Kind": "LocalVariable",
-      "Id": "JDVParameterMgt@JDV Parameter - Time@LocalVariable",
-      "Label": "JDVParameterMgt",
+      "Id": "JDVParamTypeConverter@JDV Parameter - Time@LocalVariable",
+      "Label": "JDVParamTypeConverter",
       "Category": "LocalVariable",
       "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterTime.codeunit.al",
       "Position": "18@9",
@@ -7008,7 +7093,7 @@
       "Id": "Parameter Handling@@Module",
       "Label": "Parameter Handling",
       "Category": "Module",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDecimal.codeunit.al",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
       "Position": "1@1",
       "IsDeprecated": false
     },
@@ -7032,8 +7117,8 @@
     },
     {
       "Kind": "Class",
-      "Id": "List@@Class",
-      "Label": "List",
+      "Id": "System@@Class",
+      "Label": "System",
       "Category": "Class",
       "SourceLocation": null,
       "Position": null,
@@ -7041,8 +7126,8 @@
     },
     {
       "Kind": "Class",
-      "Id": "System@@Class",
-      "Label": "System",
+      "Id": "List@@Class",
+      "Label": "List",
       "Category": "Class",
       "SourceLocation": null,
       "Position": null,
