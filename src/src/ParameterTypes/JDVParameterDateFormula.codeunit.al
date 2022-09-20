@@ -14,9 +14,9 @@ codeunit 80005 "JDV Parameter - DateFormula" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
+        JDVParamTypeConverter: Codeunit "JDV Param. Type Converter";
     begin
-        ValueVariant := JDVParameterTypeConverter.ConvertToDateFormula(Format(ValueVariant));
+        ValueVariant := JDVParamTypeConverter.ConvertToDateFormula(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>

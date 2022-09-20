@@ -15,12 +15,12 @@ codeunit 80009 "JDV Parameter - Switch" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
+        JDVParamTypeConverter: Codeunit "JDV Param. Type Converter";
     begin
         if Format(ValueVariant) = '' then
             ValueVariant := true;
 
-        ValueVariant := JDVParameterTypeConverter.ConvertToBoolean(Format(ValueVariant));
+        ValueVariant := JDVParamTypeConverter.ConvertToBoolean(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>

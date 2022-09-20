@@ -18,6 +18,9 @@
 	],
 	"al.packageCachePath": "../.alpackages",
 	"al.enableCodeAnalysis": true,
-	"al.enableCodeActions": true
+	"al.enableCodeActions": true,
+	"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectType>.al",
+	"CRS.FileNamePatternExtensions": "<ObjectName>.<ObjectType>.al",
+
 	}
 }

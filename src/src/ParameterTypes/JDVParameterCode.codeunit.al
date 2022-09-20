@@ -15,9 +15,9 @@ codeunit 80003 "JDV Parameter - Code" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
+        JDVParamTypeConverter: Codeunit "JDV Param. Type Converter";
     begin
-        ValueVariant := JDVParameterTypeConverter.ConvertToCode(Format(ValueVariant));
+        ValueVariant := JDVParamTypeConverter.ConvertToCode(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>

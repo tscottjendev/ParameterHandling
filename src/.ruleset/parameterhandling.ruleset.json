@@ -10,7 +10,7 @@
     "rules": [
     {
         "id": "LC0009",
-        "action": "Info",
+        "action": "None",
         "justification":  "Show info message about code metrics for each function or trigger - want to be able to metrics always."
     }
 

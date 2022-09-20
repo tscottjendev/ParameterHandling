@@ -14,13 +14,13 @@ codeunit 80002 "JDV Parameter - Boolean" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
+        JDVParamTypeConverter: Codeunit "JDV Param. Type Converter";
         ValueRequiredErr: Label 'Boolean parameter ''%1'' must have a value specified.', Comment = '%1 is parameter name';
     begin
         if Format(ValueVariant) = '' then
             Error(ValueRequiredErr, _Name);
 
-        ValueVariant := JDVParameterTypeConverter.ConvertToBoolean(Format(ValueVariant));
+        ValueVariant := JDVParamTypeConverter.ConvertToBoolean(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>

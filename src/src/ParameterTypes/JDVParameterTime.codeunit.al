@@ -15,9 +15,9 @@ codeunit 80011 "JDV Parameter - Time" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
+        JDVParamTypeConverter: Codeunit "JDV Param. Type Converter";
     begin
-        ValueVariant := JDVParameterTypeConverter.ConvertToTime(Format(ValueVariant));
+        ValueVariant := JDVParamTypeConverter.ConvertToTime(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>

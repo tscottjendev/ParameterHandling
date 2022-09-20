@@ -14,9 +14,9 @@ codeunit 80007 "JDV Parameter - Decimal" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
+        JDVParamTypeConverter: Codeunit "JDV Param. Type Converter";
     begin
-        ValueVariant := JDVParameterTypeConverter.ConvertToDecimal(Format(ValueVariant));
+        ValueVariant := JDVParamTypeConverter.ConvertToDecimal(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>
