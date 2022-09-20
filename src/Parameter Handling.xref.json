@@ -7093,7 +7093,7 @@
       "Id": "Parameter Handling@@Module",
       "Label": "Parameter Handling",
       "Category": "Module",
-      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterDate.codeunit.al",
+      "SourceLocation": "c:\\Repos\\Jendev\\ParameterHandling\\src\\src\\ParameterTypes\\JDVParameterHandler.interface.al",
       "Position": "1@1",
       "IsDeprecated": false
     },
