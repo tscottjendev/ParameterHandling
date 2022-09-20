@@ -16,6 +16,6 @@ permissionset 80000 "JDV ParamHandle Full"
         codeunit "JDV Parameter - Time" = X,
         codeunit "JDV Parameter Handling" = X,
         codeunit "JDV Parameter Handling Impl." = X,
-        codeunit "JDV Parameter Mgt." = X,
+        codeunit "JDV Parameter Factory" = X,
         codeunit "JDV Parameter Mgt. Impl." = X;
 }

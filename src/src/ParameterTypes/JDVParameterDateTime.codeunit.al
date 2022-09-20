@@ -14,9 +14,9 @@ codeunit 80006 "JDV Parameter - DateTime" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterMgt: Codeunit "JDV Parameter Mgt.";
+        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
     begin
-        ValueVariant := JDVParameterMgt.ConvertToDateTime(Format(ValueVariant));
+        ValueVariant := JDVParameterTypeConverter.ConvertToDateTime(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>

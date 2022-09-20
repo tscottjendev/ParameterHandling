@@ -15,9 +15,9 @@ codeunit 80010 "JDV Parameter - Text" implements "JDV Parameter Handler"
     /// <inheritdoc cref="Convert()"/>
     procedure Convert()
     var
-        JDVParameterMgt: Codeunit "JDV Parameter Mgt.";
+        JDVParameterTypeConverter: Codeunit "JDV Parameter Type Converter";
     begin
-        ValueVariant := JDVParameterMgt.ConvertToText(Format(ValueVariant));
+        ValueVariant := JDVParameterTypeConverter.ConvertToText(Format(ValueVariant));
     end;
 
     /// <inheritdoc cref="DefaultValue()"/>
