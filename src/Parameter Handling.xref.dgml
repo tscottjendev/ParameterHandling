@@ -12,12 +12,73 @@
 		<Node Id="JDV Parameter - Switch@@Codeunit" Label="JDV Parameter - Switch" Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="1@16" Group="Compact" />
 		<Node Id="JDV Parameter - Text@@Codeunit" Label="JDV Parameter - Text" Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="1@16" Group="Compact" />
 		<Node Id="JDV Parameter - Time@@Codeunit" Label="JDV Parameter - Time" Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="1@16" Group="Compact" />
+		<Node Id="JDV Parameter Factory@@Codeunit" Label="JDV Parameter Factory" Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="1@16" Group="Compact" />
+		<Node Id="JDV Parameter Factory Impl.@@Codeunit" Label="JDV Parameter Factory Impl." Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="1@16" Group="Compact" />
 		<Node Id="JDV Parameter Handling@@Codeunit" Label="JDV Parameter Handling" Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandling.codeunit.al" Position="1@16" Group="Compact" />
 		<Node Id="JDV Parameter Handling Impl.@@Codeunit" Label="JDV Parameter Handling Impl." Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandlingImpl.codeunit.al" Position="1@16" Group="Compact" />
-		<Node Id="JDV Parameter Mgt.@@Codeunit" Label="JDV Parameter Mgt." Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="1@16" Group="Compact" />
-		<Node Id="JDV Parameter Mgt. Impl.@@Codeunit" Label="JDV Parameter Mgt. Impl." Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="1@16" Group="Compact" />
-		<Node Id="OnRun@JDV Parameter Handling@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandling.codeunit.al" Position="7@13" Group="Compact" />
+		<Node Id="JDV Param. Type Converter Impl@@Codeunit" Label="JDV Param. Type Converter Impl" Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="1@16" Group="Compact" />
+		<Node Id="JDV Param. Type Converter@@Codeunit" Label="JDV Param. Type Converter" Category="Codeunit" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="1@16" Group="Compact" />
+		<Node Id="OnRun@JDV Parameter Factory@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="3@13" Group="Compact" />
 		<Node Id="Error@Dialog@Method" Label="Error" Category="Method" Group="Compact" />
+		<Node Id="BooleanParameter@JDV Parameter Factory@Method" Label="BooleanParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="8@15" Group="Compact" />
+		<Node Id="Parameter@JDV Parameter Factory@ReturnValue" Label="Parameter" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="8@44" />
+		<Node Id="JDVParameterFactoryImpl@JDV Parameter Factory@LocalVariable" Label="JDVParameterFactoryImpl" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="10@9" />
+		<Node Id="BooleanParameter@JDV Parameter Factory Impl.@Method" Label="BooleanParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="10@15" Group="Compact" />
+		<Node Id="CodeParameter@JDV Parameter Factory@Method" Label="CodeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="22@15" Group="Compact" />
+		<Node Id="CodeParameter@JDV Parameter Factory Impl.@Method" Label="CodeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="20@15" Group="Compact" />
+		<Node Id="DateFormulaParameter@JDV Parameter Factory@Method" Label="DateFormulaParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="43@15" Group="Compact" />
+		<Node Id="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Label="DateFormulaParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="35@15" Group="Compact" />
+		<Node Id="DateParameter@JDV Parameter Factory@Method" Label="DateParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="71@15" Group="Compact" />
+		<Node Id="DateParameter@JDV Parameter Factory Impl.@Method" Label="DateParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="61@15" Group="Compact" />
+		<Node Id="DateTimeParameter@JDV Parameter Factory@Method" Label="DateTimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="93@15" Group="Compact" />
+		<Node Id="DateTimeParameter@JDV Parameter Factory Impl.@Method" Label="DateTimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="76@15" Group="Compact" />
+		<Node Id="DecimalParameter@JDV Parameter Factory@Method" Label="DecimalParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="107@15" Group="Compact" />
+		<Node Id="DecimalParameter@JDV Parameter Factory Impl.@Method" Label="DecimalParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="86@15" Group="Compact" />
+		<Node Id="IntegerParameter@JDV Parameter Factory@Method" Label="IntegerParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="128@15" Group="Compact" />
+		<Node Id="IntegerParameter@JDV Parameter Factory Impl.@Method" Label="IntegerParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="111@15" Group="Compact" />
+		<Node Id="Parameter@JDV Parameter Factory@Method" Label="Parameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="149@15" Group="Compact" />
+		<Node Id="Parameter@JDV Parameter Factory Impl.@Method" Label="Parameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="116@15" Group="Compact" />
+		<Node Id="SwitchParameter@JDV Parameter Factory@Method" Label="SwitchParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="275@15" Group="Compact" />
+		<Node Id="SwitchParameter@JDV Parameter Factory Impl.@Method" Label="SwitchParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="242@15" Group="Compact" />
+		<Node Id="TextParameter@JDV Parameter Factory@Method" Label="TextParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="289@15" Group="Compact" />
+		<Node Id="TextParameter@JDV Parameter Factory Impl.@Method" Label="TextParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="260@15" Group="Compact" />
+		<Node Id="TimeParameter@JDV Parameter Factory@Method" Label="TimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactory.codeunit.al" Position="317@15" Group="Compact" />
+		<Node Id="TimeParameter@JDV Parameter Factory Impl.@Method" Label="TimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="280@15" Group="Compact" />
+		<Node Id="OnRun@JDV Parameter Factory Impl.@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="5@13" Group="Compact" />
+		<Node Id="Parameter@JDV Parameter Factory Impl.@ReturnValue" Label="Parameter" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="10@44" />
+		<Node Id="DateFormulaValue@JDV Parameter Factory Impl.@LocalVariable" Label="DateFormulaValue" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterFactoryImpl.codeunit.al" Position="37@9" />
+		<Node Id="Evaluate@System@Method" Label="Evaluate" Category="Method" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Text@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="62@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Text@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="30@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Text@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="50@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Code@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="62@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Code@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="30@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Code@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="50@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Boolean@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="65@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Boolean@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="33@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Boolean@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="53@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Integer@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="62@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Integer@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="30@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Integer@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="50@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - DateTime@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="61@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - DateTime@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="29@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - DateTime@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="49@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - DateFormula@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="67@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - DateFormula@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="53@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - DateFormula@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="61@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Decimal@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="61@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Decimal@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="29@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Decimal@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="49@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Date@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="61@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Date@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="29@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Date@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="49@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Time@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="62@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Time@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="30@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Time@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="50@15" Group="Compact" />
+		<Node Id="Name@JDV Parameter - Switch@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="65@15" Group="Compact" />
+		<Node Id="DefaultValue@JDV Parameter - Switch@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="33@15" Group="Compact" />
+		<Node Id="IsRequired@JDV Parameter - Switch@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="53@15" Group="Compact" />
+		<Node Id="OnRun@JDV Parameter Handling@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandling.codeunit.al" Position="7@13" Group="Compact" />
 		<Node Id="JDVParameterHandlingImpl@JDV Parameter Handling@GlobalVariable" Label="JDVParameterHandlingImpl" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandling.codeunit.al" Position="13@9" />
 		<Node Id="AddAllowedParameter@JDV Parameter Handling@Method" Label="AddAllowedParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandling.codeunit.al" Position="19@15" Group="Compact" />
 		<Node Id="JDV Parameter Handler@@Interface" Label="JDV Parameter Handler" Category="Interface" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterHandler.interface.al" Position="1@11" />
@@ -101,85 +162,6 @@
 		<Node Id="RequiredParameterMissingErr@JDV Parameter Handling Impl.@LocalVariable" Label="RequiredParameterMissingErr" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandlingImpl.codeunit.al" Position="267@9" />
 		<Node Id="InvalidParameterStringErr@JDV Parameter Handling Impl.@LocalVariable" Label="InvalidParameterStringErr" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterHandlingImpl.codeunit.al" Position="276@9" />
 		<Node Id="StartsWith@Text@Method" Label="StartsWith" Category="Method" Group="Compact" />
-		<Node Id="OnRun@JDV Parameter Mgt.@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="3@13" Group="Compact" />
-		<Node Id="BooleanParameter@JDV Parameter Mgt.@Method" Label="BooleanParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="8@15" Group="Compact" />
-		<Node Id="Parameter@JDV Parameter Mgt.@ReturnValue" Label="Parameter" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="8@44" />
-		<Node Id="JDVParameterMgtImpl@JDV Parameter Mgt.@LocalVariable" Label="JDVParameterMgtImpl" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="10@9" />
-		<Node Id="BooleanParameter@JDV Parameter Mgt. Impl.@Method" Label="BooleanParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="10@15" Group="Compact" />
-		<Node Id="CodeParameter@JDV Parameter Mgt.@Method" Label="CodeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="22@15" Group="Compact" />
-		<Node Id="CodeParameter@JDV Parameter Mgt. Impl.@Method" Label="CodeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="20@15" Group="Compact" />
-		<Node Id="ConvertToBoolean@JDV Parameter Mgt.@Method" Label="ConvertToBoolean" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="43@15" Group="Compact" />
-		<Node Id="Value@JDV Parameter Mgt.@ReturnValue" Label="Value" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="43@51" />
-		<Node Id="ConvertToBoolean@JDV Parameter Mgt. Impl.@Method" Label="ConvertToBoolean" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="36@15" Group="Compact" />
-		<Node Id="ConvertToCode@JDV Parameter Mgt.@Method" Label="ConvertToCode" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="50@15" Group="Compact" />
-		<Node Id="ConvertToCode@JDV Parameter Mgt. Impl.@Method" Label="ConvertToCode" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="43@15" Group="Compact" />
-		<Node Id="ConvertToDate@JDV Parameter Mgt.@Method" Label="ConvertToDate" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="57@15" Group="Compact" />
-		<Node Id="ConvertToDate@JDV Parameter Mgt. Impl.@Method" Label="ConvertToDate" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="50@15" Group="Compact" />
-		<Node Id="ConvertToDateFormula@JDV Parameter Mgt.@Method" Label="ConvertToDateFormula" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="64@15" Group="Compact" />
-		<Node Id="ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method" Label="ConvertToDateFormula" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="57@15" Group="Compact" />
-		<Node Id="ConvertToDateTime@JDV Parameter Mgt.@Method" Label="ConvertToDateTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="71@15" Group="Compact" />
-		<Node Id="ConvertToDateTime@JDV Parameter Mgt. Impl.@Method" Label="ConvertToDateTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="64@15" Group="Compact" />
-		<Node Id="ConvertToDecimal@JDV Parameter Mgt.@Method" Label="ConvertToDecimal" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="78@15" Group="Compact" />
-		<Node Id="ConvertToDecimal@JDV Parameter Mgt. Impl.@Method" Label="ConvertToDecimal" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="71@15" Group="Compact" />
-		<Node Id="ConvertToInteger@JDV Parameter Mgt.@Method" Label="ConvertToInteger" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="85@15" Group="Compact" />
-		<Node Id="ConvertToInteger@JDV Parameter Mgt. Impl.@Method" Label="ConvertToInteger" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="78@15" Group="Compact" />
-		<Node Id="ConvertToText@JDV Parameter Mgt.@Method" Label="ConvertToText" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="92@15" Group="Compact" />
-		<Node Id="ConvertToText@JDV Parameter Mgt. Impl.@Method" Label="ConvertToText" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="85@15" Group="Compact" />
-		<Node Id="ConvertToTime@JDV Parameter Mgt.@Method" Label="ConvertToTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="99@15" Group="Compact" />
-		<Node Id="ConvertToTime@JDV Parameter Mgt. Impl.@Method" Label="ConvertToTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="92@15" Group="Compact" />
-		<Node Id="DateFormulaParameter@JDV Parameter Mgt.@Method" Label="DateFormulaParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="106@15" Group="Compact" />
-		<Node Id="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Label="DateFormulaParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="99@15" Group="Compact" />
-		<Node Id="DateParameter@JDV Parameter Mgt.@Method" Label="DateParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="134@15" Group="Compact" />
-		<Node Id="DateParameter@JDV Parameter Mgt. Impl.@Method" Label="DateParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="125@15" Group="Compact" />
-		<Node Id="IntegerParameter@JDV Parameter Mgt.@Method" Label="IntegerParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="141@15" Group="Compact" />
-		<Node Id="IntegerParameter@JDV Parameter Mgt. Impl.@Method" Label="IntegerParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="175@15" Group="Compact" />
-		<Node Id="DateTimeParameter@JDV Parameter Mgt.@Method" Label="DateTimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="163@15" Group="Compact" />
-		<Node Id="DateTimeParameter@JDV Parameter Mgt. Impl.@Method" Label="DateTimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="140@15" Group="Compact" />
-		<Node Id="DecimalParameter@JDV Parameter Mgt.@Method" Label="DecimalParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="177@15" Group="Compact" />
-		<Node Id="DecimalParameter@JDV Parameter Mgt. Impl.@Method" Label="DecimalParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="150@15" Group="Compact" />
-		<Node Id="Parameter@JDV Parameter Mgt.@Method" Label="Parameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="212@15" Group="Compact" />
-		<Node Id="Parameter@JDV Parameter Mgt. Impl.@Method" Label="Parameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="180@15" Group="Compact" />
-		<Node Id="SwitchParameter@JDV Parameter Mgt.@Method" Label="SwitchParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="338@15" Group="Compact" />
-		<Node Id="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Label="SwitchParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="306@15" Group="Compact" />
-		<Node Id="TextParameter@JDV Parameter Mgt.@Method" Label="TextParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="352@15" Group="Compact" />
-		<Node Id="TextParameter@JDV Parameter Mgt. Impl.@Method" Label="TextParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="324@15" Group="Compact" />
-		<Node Id="TimeParameter@JDV Parameter Mgt.@Method" Label="TimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgt.codeunit.al" Position="380@15" Group="Compact" />
-		<Node Id="TimeParameter@JDV Parameter Mgt. Impl.@Method" Label="TimeParameter" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="344@15" Group="Compact" />
-		<Node Id="OnRun@JDV Parameter Mgt. Impl.@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="5@13" Group="Compact" />
-		<Node Id="Parameter@JDV Parameter Mgt. Impl.@ReturnValue" Label="Parameter" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="10@44" />
-		<Node Id="Value@JDV Parameter Mgt. Impl.@ReturnValue" Label="Value" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="36@51" />
-		<Node Id="Evaluate@System@Method" Label="Evaluate" Category="Method" Group="Compact" />
-		<Node Id="DateFormulaValue@JDV Parameter Mgt. Impl.@LocalVariable" Label="DateFormulaValue" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterMgtImpl.codeunit.al" Position="101@9" />
-		<Node Id="Name@JDV Parameter - Text@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="62@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Text@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="30@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Text@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="50@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - Code@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="62@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Code@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="30@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Code@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="50@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - Boolean@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="65@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Boolean@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="33@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Boolean@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="53@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - Integer@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="62@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Integer@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="30@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Integer@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="50@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - DateTime@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="61@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - DateTime@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="29@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - DateTime@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="49@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - DateFormula@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="67@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - DateFormula@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="53@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - DateFormula@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="61@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - Decimal@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="61@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Decimal@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="29@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Decimal@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="49@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - Date@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="61@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Date@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="29@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Date@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="49@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - Time@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="62@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Time@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="30@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Time@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="50@15" Group="Compact" />
-		<Node Id="Name@JDV Parameter - Switch@Method" Label="Name" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="65@15" Group="Compact" />
-		<Node Id="DefaultValue@JDV Parameter - Switch@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="33@15" Group="Compact" />
-		<Node Id="IsRequired@JDV Parameter - Switch@Method" Label="IsRequired" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="53@15" Group="Compact" />
 		<Node Id="JDV ParameterType@@Enum" Label="JDV ParameterType" Category="Enum" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterType.enum.al" Position="1@12" />
 		<Node Id="Text@JDV ParameterType@EnumValue" Label="Text" Category="EnumValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterType.enum.al" Position="5@14" />
 		<Node Id="Code@JDV ParameterType@EnumValue" Label="Code" Category="EnumValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterType.enum.al" Position="9@14" />
@@ -191,6 +173,29 @@
 		<Node Id="Boolean@JDV ParameterType@EnumValue" Label="Boolean" Category="EnumValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterType.enum.al" Position="33@14" />
 		<Node Id="DateFormula@JDV ParameterType@EnumValue" Label="DateFormula" Category="EnumValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterType.enum.al" Position="37@14" />
 		<Node Id="Switch@JDV ParameterType@EnumValue" Label="Switch" Category="EnumValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParameterType.enum.al" Position="41@14" />
+		<Node Id="OnRun@JDV Param. Type Converter@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="5@13" Group="Compact" />
+		<Node Id="ConvertToBoolean@JDV Param. Type Converter@Method" Label="ConvertToBoolean" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="10@15" Group="Compact" />
+		<Node Id="Value@JDV Param. Type Converter@ReturnValue" Label="Value" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="10@51" />
+		<Node Id="JDVParamTypeConverterImpl@JDV Param. Type Converter@LocalVariable" Label="JDVParamTypeConverterImpl" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="12@9" />
+		<Node Id="ConvertToBoolean@JDV Param. Type Converter Impl@Method" Label="ConvertToBoolean" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="10@15" Group="Compact" />
+		<Node Id="ConvertToCode@JDV Param. Type Converter@Method" Label="ConvertToCode" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="18@15" Group="Compact" />
+		<Node Id="ConvertToCode@JDV Param. Type Converter Impl@Method" Label="ConvertToCode" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="17@15" Group="Compact" />
+		<Node Id="ConvertToDate@JDV Param. Type Converter@Method" Label="ConvertToDate" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="25@15" Group="Compact" />
+		<Node Id="ConvertToDate@JDV Param. Type Converter Impl@Method" Label="ConvertToDate" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="24@15" Group="Compact" />
+		<Node Id="ConvertToDateFormula@JDV Param. Type Converter@Method" Label="ConvertToDateFormula" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="32@15" Group="Compact" />
+		<Node Id="ConvertToDateFormula@JDV Param. Type Converter Impl@Method" Label="ConvertToDateFormula" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="31@15" Group="Compact" />
+		<Node Id="ConvertToDateTime@JDV Param. Type Converter@Method" Label="ConvertToDateTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="39@15" Group="Compact" />
+		<Node Id="ConvertToDateTime@JDV Param. Type Converter Impl@Method" Label="ConvertToDateTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="38@15" Group="Compact" />
+		<Node Id="ConvertToDecimal@JDV Param. Type Converter@Method" Label="ConvertToDecimal" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="46@15" Group="Compact" />
+		<Node Id="ConvertToDecimal@JDV Param. Type Converter Impl@Method" Label="ConvertToDecimal" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="45@15" Group="Compact" />
+		<Node Id="ConvertToInteger@JDV Param. Type Converter@Method" Label="ConvertToInteger" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="53@15" Group="Compact" />
+		<Node Id="ConvertToInteger@JDV Param. Type Converter Impl@Method" Label="ConvertToInteger" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="52@15" Group="Compact" />
+		<Node Id="ConvertToText@JDV Param. Type Converter@Method" Label="ConvertToText" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="60@15" Group="Compact" />
+		<Node Id="ConvertToText@JDV Param. Type Converter Impl@Method" Label="ConvertToText" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="59@15" Group="Compact" />
+		<Node Id="ConvertToTime@JDV Param. Type Converter@Method" Label="ConvertToTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverter.codeunit.al" Position="67@15" Group="Compact" />
+		<Node Id="ConvertToTime@JDV Param. Type Converter Impl@Method" Label="ConvertToTime" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="66@15" Group="Compact" />
+		<Node Id="OnRun@JDV Param. Type Converter Impl@Method" Label="OnRun" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="5@13" Group="Compact" />
+		<Node Id="Value@JDV Param. Type Converter Impl@ReturnValue" Label="Value" Category="ReturnValue" Reference="c:\Repos\Jendev\ParameterHandling\src\src\JDVParamTypeConverterImpl.codeunit.al" Position="10@51" />
 		<Node Id="Required@JDV Parameter - Boolean@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="7@9" />
 		<Node Id="HasDefaultValue@JDV Parameter - Boolean@GlobalVariable" Label="HasDefaultValue" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="8@9" />
 		<Node Id="HasName@JDV Parameter - Boolean@GlobalVariable" Label="HasName" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="9@9" />
@@ -198,7 +203,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Boolean@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="11@9" />
 		<Node Id="ValueVariant@JDV Parameter - Boolean@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="12@9" />
 		<Node Id="Convert@JDV Parameter - Boolean@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="15@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Boolean@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="17@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Boolean@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="17@9" />
 		<Node Id="ValueRequiredErr@JDV Parameter - Boolean@LocalVariable" Label="ValueRequiredErr" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="18@9" />
 		<Node Id="Initialized@JDV Parameter - Boolean@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="41@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Boolean@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterBoolean.codeunit.al" Position="72@15" Group="Compact" />
@@ -209,7 +214,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Code@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="12@9" />
 		<Node Id="ValueVariant@JDV Parameter - Code@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="13@9" />
 		<Node Id="Convert@JDV Parameter - Code@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="16@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Code@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="18@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Code@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="18@9" />
 		<Node Id="Initialized@JDV Parameter - Code@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="38@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Code@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterCode.codeunit.al" Position="69@15" Group="Compact" />
 		<Node Id="Required@JDV Parameter - Date@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="7@9" />
@@ -219,7 +224,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Date@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="11@9" />
 		<Node Id="ValueVariant@JDV Parameter - Date@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="12@9" />
 		<Node Id="Convert@JDV Parameter - Date@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="15@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Date@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="17@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Date@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="17@9" />
 		<Node Id="Initialized@JDV Parameter - Date@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="37@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Date@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDate.codeunit.al" Position="68@15" Group="Compact" />
 		<Node Id="Required@JDV Parameter - DateFormula@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="7@9" />
@@ -229,7 +234,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - DateFormula@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="11@9" />
 		<Node Id="ValueVariant@JDV Parameter - DateFormula@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="12@9" />
 		<Node Id="Convert@JDV Parameter - DateFormula@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="15@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - DateFormula@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="17@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - DateFormula@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="17@9" />
 		<Node Id="Value@JDV Parameter - DateFormula@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="41@15" Group="Compact" />
 		<Node Id="Initialized@JDV Parameter - DateFormula@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateFormula.codeunit.al" Position="47@15" Group="Compact" />
 		<Node Id="Required@JDV Parameter - DateTime@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="7@9" />
@@ -239,7 +244,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - DateTime@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="11@9" />
 		<Node Id="ValueVariant@JDV Parameter - DateTime@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="12@9" />
 		<Node Id="Convert@JDV Parameter - DateTime@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="15@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - DateTime@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="17@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - DateTime@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="17@9" />
 		<Node Id="Initialized@JDV Parameter - DateTime@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="37@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - DateTime@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDateTime.codeunit.al" Position="68@15" Group="Compact" />
 		<Node Id="Required@JDV Parameter - Decimal@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="7@9" />
@@ -249,7 +254,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Decimal@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="11@9" />
 		<Node Id="ValueVariant@JDV Parameter - Decimal@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="12@9" />
 		<Node Id="Convert@JDV Parameter - Decimal@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="15@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Decimal@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="17@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Decimal@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="17@9" />
 		<Node Id="Initialized@JDV Parameter - Decimal@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="37@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Decimal@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="68@15" Group="Compact" />
 		<Node Id="DefaultValue@JDV Parameter Handler@Method" Label="DefaultValue" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterHandler.interface.al" Position="21@15" Group="Compact" />
@@ -260,7 +265,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Integer@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="12@9" />
 		<Node Id="ValueVariant@JDV Parameter - Integer@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="13@9" />
 		<Node Id="Convert@JDV Parameter - Integer@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="16@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Integer@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="18@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Integer@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="18@9" />
 		<Node Id="Initialized@JDV Parameter - Integer@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="38@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Integer@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterInteger.codeunit.al" Position="69@15" Group="Compact" />
 		<Node Id="Required@JDV Parameter - Switch@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="8@9" />
@@ -270,7 +275,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Switch@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="12@9" />
 		<Node Id="ValueVariant@JDV Parameter - Switch@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="13@9" />
 		<Node Id="Convert@JDV Parameter - Switch@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="16@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Switch@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="18@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Switch@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="18@9" />
 		<Node Id="Initialized@JDV Parameter - Switch@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="41@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Switch@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterSwitch.codeunit.al" Position="73@15" Group="Compact" />
 		<Node Id="Required@JDV Parameter - Text@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="8@9" />
@@ -280,7 +285,7 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Text@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="12@9" />
 		<Node Id="ValueVariant@JDV Parameter - Text@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="13@9" />
 		<Node Id="Convert@JDV Parameter - Text@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="16@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Text@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="18@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Text@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="18@9" />
 		<Node Id="Initialized@JDV Parameter - Text@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="38@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Text@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterText.codeunit.al" Position="69@15" Group="Compact" />
 		<Node Id="Required@JDV Parameter - Time@GlobalVariable" Label="Required" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="8@9" />
@@ -290,18 +295,19 @@
 		<Node Id="DefaultValueVariant@JDV Parameter - Time@GlobalVariable" Label="DefaultValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="12@9" />
 		<Node Id="ValueVariant@JDV Parameter - Time@GlobalVariable" Label="ValueVariant" Category="GlobalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="13@9" />
 		<Node Id="Convert@JDV Parameter - Time@Method" Label="Convert" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="16@15" Group="Compact" />
-		<Node Id="JDVParameterMgt@JDV Parameter - Time@LocalVariable" Label="JDVParameterMgt" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="18@9" />
+		<Node Id="JDVParamTypeConverter@JDV Parameter - Time@LocalVariable" Label="JDVParamTypeConverter" Category="LocalVariable" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="18@9" />
 		<Node Id="Initialized@JDV Parameter - Time@Method" Label="Initialized" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="38@15" Group="Compact" />
 		<Node Id="Value@JDV Parameter - Time@Method" Label="Value" Category="Method" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterTime.codeunit.al" Position="69@15" Group="Compact" />
-		<Node Id="Parameter Handling@@Module" Label="Parameter Handling" Category="Module" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterDecimal.codeunit.al" Position="1@1" Group="Compact" />
+		<Node Id="Parameter Handling@@Module" Label="Parameter Handling" Category="Module" Reference="c:\Repos\Jendev\ParameterHandling\src\src\ParameterTypes\JDVParameterHandler.interface.al" Position="1@1" Group="Compact" />
 		<Node Id="Dialog@@Class" Label="Dialog" Category="Class" Group="Compact" />
 		<Node Id="System@@Module" Label="System" Category="Module" Group="Compact" />
-		<Node Id="List@@Class" Label="List" Category="Class" Group="Compact" />
 		<Node Id="System@@Class" Label="System" Category="Class" Group="Compact" />
+		<Node Id="List@@Class" Label="List" Category="Class" Group="Compact" />
 		<Node Id="Text@@Class" Label="Text" Category="Class" Group="Compact" />
 		<Node Id="TextBuilder@@Class" Label="TextBuilder" Category="Class" Group="Compact" />
 	</Nodes>
 	<Links>
+		<Link Source="JDVParameterFactoryImpl@JDV Parameter Factory@LocalVariable" Target="JDV Parameter Factory Impl.@@Codeunit" Category="References" />
 		<Link Source="JDVParameterHandlingImpl@JDV Parameter Handling@GlobalVariable" Target="JDV Parameter Handling Impl.@@Codeunit" Category="References" />
 		<Link Source="AddAllowedParameter@JDV Parameter Handling@Method" Target="JDV Parameter Handler@@Interface" Category="References" />
 		<Link Source="AddAllowedParameter@JDV Parameter Handling Impl.@Method" Target="JDV Parameter Handler@@Interface" Category="References" />
@@ -328,8 +334,8 @@
 		<Link Source="TestRequiredParameters@JDV Parameter Handling Impl.@Method" Target="RequiredNames@JDV Parameter Handling Impl.@GlobalVariable" Category="References" />
 		<Link Source="TestRequiredParameters@JDV Parameter Handling Impl.@Method" Target="ReceivedNames@JDV Parameter Handling Impl.@GlobalVariable" Category="References" />
 		<Link Source="UpdateParameterString@JDV Parameter Handling Impl.@Method" Target="ParameterStringBuilder@JDV Parameter Handling Impl.@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgtImpl@JDV Parameter Mgt.@LocalVariable" Target="JDV Parameter Mgt. Impl.@@Codeunit" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Boolean@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverterImpl@JDV Param. Type Converter@LocalVariable" Target="JDV Param. Type Converter Impl@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Boolean@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="ValueVariant@JDV Parameter - Boolean@GlobalVariable" Category="References" />
 		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="_Name@JDV Parameter - Boolean@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Boolean@Method" Target="DefaultValueVariant@JDV Parameter - Boolean@GlobalVariable" Category="References" />
@@ -341,7 +347,7 @@
 		<Link Source="Name@JDV Parameter - Boolean@Method" Target="_Name@JDV Parameter - Boolean@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Boolean@Method" Target="HasName@JDV Parameter - Boolean@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Boolean@Method" Target="ValueVariant@JDV Parameter - Boolean@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Code@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Code@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Code@Method" Target="ValueVariant@JDV Parameter - Code@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Code@Method" Target="DefaultValueVariant@JDV Parameter - Code@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Code@Method" Target="ValueVariant@JDV Parameter - Code@GlobalVariable" Category="References" />
@@ -352,7 +358,7 @@
 		<Link Source="Name@JDV Parameter - Code@Method" Target="_Name@JDV Parameter - Code@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Code@Method" Target="HasName@JDV Parameter - Code@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Code@Method" Target="ValueVariant@JDV Parameter - Code@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Date@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Date@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Date@Method" Target="ValueVariant@JDV Parameter - Date@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Date@Method" Target="DefaultValueVariant@JDV Parameter - Date@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Date@Method" Target="ValueVariant@JDV Parameter - Date@GlobalVariable" Category="References" />
@@ -363,7 +369,7 @@
 		<Link Source="Name@JDV Parameter - Date@Method" Target="_Name@JDV Parameter - Date@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Date@Method" Target="HasName@JDV Parameter - Date@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Date@Method" Target="ValueVariant@JDV Parameter - Date@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - DateFormula@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - DateFormula@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - DateFormula@Method" Target="ValueVariant@JDV Parameter - DateFormula@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - DateFormula@Method" Target="DefaultValueVariant@JDV Parameter - DateFormula@GlobalVariable" Category="References" />
 		<Link Source="IsRequired@JDV Parameter - DateFormula@Method" Target="Required@JDV Parameter - DateFormula@GlobalVariable" Category="References" />
@@ -374,7 +380,7 @@
 		<Link Source="DefaultValue@JDV Parameter - DateFormula@Method" Target="ValueVariant@JDV Parameter - DateFormula@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - DateFormula@Method" Target="HasDefaultValue@JDV Parameter - DateFormula@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - DateFormula@Method" Target="HasName@JDV Parameter - DateFormula@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - DateTime@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - DateTime@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - DateTime@Method" Target="ValueVariant@JDV Parameter - DateTime@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - DateTime@Method" Target="DefaultValueVariant@JDV Parameter - DateTime@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - DateTime@Method" Target="ValueVariant@JDV Parameter - DateTime@GlobalVariable" Category="References" />
@@ -385,7 +391,7 @@
 		<Link Source="Name@JDV Parameter - DateTime@Method" Target="_Name@JDV Parameter - DateTime@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - DateTime@Method" Target="HasName@JDV Parameter - DateTime@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - DateTime@Method" Target="ValueVariant@JDV Parameter - DateTime@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Decimal@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Decimal@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Decimal@Method" Target="ValueVariant@JDV Parameter - Decimal@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Decimal@Method" Target="DefaultValueVariant@JDV Parameter - Decimal@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Decimal@Method" Target="ValueVariant@JDV Parameter - Decimal@GlobalVariable" Category="References" />
@@ -396,7 +402,7 @@
 		<Link Source="Name@JDV Parameter - Decimal@Method" Target="_Name@JDV Parameter - Decimal@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Decimal@Method" Target="HasName@JDV Parameter - Decimal@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Decimal@Method" Target="ValueVariant@JDV Parameter - Decimal@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Integer@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Integer@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Integer@Method" Target="ValueVariant@JDV Parameter - Integer@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Integer@Method" Target="DefaultValueVariant@JDV Parameter - Integer@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Integer@Method" Target="ValueVariant@JDV Parameter - Integer@GlobalVariable" Category="References" />
@@ -407,7 +413,7 @@
 		<Link Source="Name@JDV Parameter - Integer@Method" Target="_Name@JDV Parameter - Integer@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Integer@Method" Target="HasName@JDV Parameter - Integer@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Integer@Method" Target="ValueVariant@JDV Parameter - Integer@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Switch@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Switch@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Switch@Method" Target="ValueVariant@JDV Parameter - Switch@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Switch@Method" Target="DefaultValueVariant@JDV Parameter - Switch@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Switch@Method" Target="ValueVariant@JDV Parameter - Switch@GlobalVariable" Category="References" />
@@ -419,7 +425,7 @@
 		<Link Source="Name@JDV Parameter - Switch@Method" Target="HasName@JDV Parameter - Switch@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Switch@Method" Target="HasDefaultValue@JDV Parameter - Switch@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Switch@Method" Target="ValueVariant@JDV Parameter - Switch@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Text@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Text@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Text@Method" Target="ValueVariant@JDV Parameter - Text@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Text@Method" Target="DefaultValueVariant@JDV Parameter - Text@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Text@Method" Target="ValueVariant@JDV Parameter - Text@GlobalVariable" Category="References" />
@@ -430,7 +436,7 @@
 		<Link Source="Name@JDV Parameter - Text@Method" Target="_Name@JDV Parameter - Text@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Text@Method" Target="HasName@JDV Parameter - Text@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Text@Method" Target="ValueVariant@JDV Parameter - Text@GlobalVariable" Category="References" />
-		<Link Source="JDVParameterMgt@JDV Parameter - Time@LocalVariable" Target="JDV Parameter Mgt.@@Codeunit" Category="References" />
+		<Link Source="JDVParamTypeConverter@JDV Parameter - Time@LocalVariable" Target="JDV Param. Type Converter@@Codeunit" Category="References" />
 		<Link Source="Convert@JDV Parameter - Time@Method" Target="ValueVariant@JDV Parameter - Time@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Time@Method" Target="DefaultValueVariant@JDV Parameter - Time@GlobalVariable" Category="References" />
 		<Link Source="DefaultValue@JDV Parameter - Time@Method" Target="ValueVariant@JDV Parameter - Time@GlobalVariable" Category="References" />
@@ -441,6 +447,65 @@
 		<Link Source="Name@JDV Parameter - Time@Method" Target="_Name@JDV Parameter - Time@GlobalVariable" Category="References" />
 		<Link Source="Name@JDV Parameter - Time@Method" Target="HasName@JDV Parameter - Time@GlobalVariable" Category="References" />
 		<Link Source="Value@JDV Parameter - Time@Method" Target="ValueVariant@JDV Parameter - Time@GlobalVariable" Category="References" />
+		<Link Source="OnRun@JDV Parameter Factory@Method" Target="Error@Dialog@Method" Category="Calls" />
+		<Link Source="BooleanParameter@JDV Parameter Factory@Method" Target="BooleanParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="CodeParameter@JDV Parameter Factory@Method" Target="CodeParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DateFormulaParameter@JDV Parameter Factory@Method" Target="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DateParameter@JDV Parameter Factory@Method" Target="DateParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DateTimeParameter@JDV Parameter Factory@Method" Target="DateTimeParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DecimalParameter@JDV Parameter Factory@Method" Target="DecimalParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="IntegerParameter@JDV Parameter Factory@Method" Target="IntegerParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="SwitchParameter@JDV Parameter Factory@Method" Target="SwitchParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="TextParameter@JDV Parameter Factory@Method" Target="TextParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="TimeParameter@JDV Parameter Factory@Method" Target="TimeParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="OnRun@JDV Parameter Factory Impl.@Method" Target="Error@Dialog@Method" Category="Calls" />
+		<Link Source="BooleanParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="CodeParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="CodeParameter@JDV Parameter Factory Impl.@Method" Target="CodeParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Target="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DateParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DateTimeParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="DecimalParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="IntegerParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Text@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Text@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Text@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Code@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Code@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Code@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Boolean@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Boolean@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Boolean@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Integer@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Integer@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Integer@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - DateTime@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - DateTime@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - DateTime@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - DateFormula@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - DateFormula@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - DateFormula@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Decimal@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Decimal@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Decimal@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Date@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Date@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Date@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Time@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Time@Method" Category="Calls" />
+		<Link Source="Parameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Time@Method" Category="Calls" />
+		<Link Source="SwitchParameter@JDV Parameter Factory Impl.@Method" Target="SwitchParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="SwitchParameter@JDV Parameter Factory Impl.@Method" Target="Name@JDV Parameter - Switch@Method" Category="Calls" />
+		<Link Source="SwitchParameter@JDV Parameter Factory Impl.@Method" Target="DefaultValue@JDV Parameter - Switch@Method" Category="Calls" />
+		<Link Source="SwitchParameter@JDV Parameter Factory Impl.@Method" Target="IsRequired@JDV Parameter - Switch@Method" Category="Calls" />
+		<Link Source="TextParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="TextParameter@JDV Parameter Factory Impl.@Method" Target="TextParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="TimeParameter@JDV Parameter Factory Impl.@Method" Target="TimeParameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
+		<Link Source="TimeParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Calls" />
 		<Link Source="OnRun@JDV Parameter Handling@Method" Target="Error@Dialog@Method" Category="Calls" />
 		<Link Source="AddAllowedParameter@JDV Parameter Handling@Method" Target="AddAllowedParameter@JDV Parameter Handling Impl.@Method" Category="Calls" />
 		<Link Source="Count@JDV Parameter Handling@Method" Target="Count@JDV Parameter Handling Impl.@Method" Category="Calls" />
@@ -538,103 +603,46 @@
 		<Link Source="ValuePart@JDV Parameter Handling Impl.@Method" Target="Substring@Text@Method" Category="Calls" />
 		<Link Source="ValuePart@JDV Parameter Handling Impl.@Method" Target="IndexOf@Text@Method" Category="Calls" />
 		<Link Source="ValuePart@JDV Parameter Handling Impl.@Method" Target="StrLen@Text@Method" Category="Calls" />
-		<Link Source="OnRun@JDV Parameter Mgt.@Method" Target="Error@Dialog@Method" Category="Calls" />
-		<Link Source="BooleanParameter@JDV Parameter Mgt.@Method" Target="BooleanParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="CodeParameter@JDV Parameter Mgt.@Method" Target="CodeParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToBoolean@JDV Parameter Mgt.@Method" Target="ConvertToBoolean@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToCode@JDV Parameter Mgt.@Method" Target="ConvertToCode@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToDate@JDV Parameter Mgt.@Method" Target="ConvertToDate@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToDateFormula@JDV Parameter Mgt.@Method" Target="ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToDateTime@JDV Parameter Mgt.@Method" Target="ConvertToDateTime@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToDecimal@JDV Parameter Mgt.@Method" Target="ConvertToDecimal@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToInteger@JDV Parameter Mgt.@Method" Target="ConvertToInteger@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToText@JDV Parameter Mgt.@Method" Target="ConvertToText@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToTime@JDV Parameter Mgt.@Method" Target="ConvertToTime@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DateFormulaParameter@JDV Parameter Mgt.@Method" Target="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DateParameter@JDV Parameter Mgt.@Method" Target="DateParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="IntegerParameter@JDV Parameter Mgt.@Method" Target="IntegerParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DateTimeParameter@JDV Parameter Mgt.@Method" Target="DateTimeParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DecimalParameter@JDV Parameter Mgt.@Method" Target="DecimalParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="SwitchParameter@JDV Parameter Mgt.@Method" Target="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="TextParameter@JDV Parameter Mgt.@Method" Target="TextParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="TimeParameter@JDV Parameter Mgt.@Method" Target="TimeParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="OnRun@JDV Parameter Mgt. Impl.@Method" Target="Error@Dialog@Method" Category="Calls" />
-		<Link Source="BooleanParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="CodeParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="CodeParameter@JDV Parameter Mgt. Impl.@Method" Target="CodeParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="ConvertToBoolean@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToCode@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToDate@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToDateTime@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToDecimal@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToInteger@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToText@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="ConvertToTime@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Target="Evaluate@System@Method" Category="Calls" />
-		<Link Source="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Target="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DateParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DateTimeParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="DecimalParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="IntegerParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Text@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Text@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Text@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Code@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Code@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Code@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Boolean@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Boolean@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Boolean@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Integer@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Integer@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Integer@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - DateTime@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - DateTime@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - DateTime@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - DateFormula@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - DateFormula@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - DateFormula@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Decimal@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Decimal@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Decimal@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Date@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Date@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Date@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Time@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Time@Method" Category="Calls" />
-		<Link Source="Parameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Time@Method" Category="Calls" />
-		<Link Source="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Target="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Target="Name@JDV Parameter - Switch@Method" Category="Calls" />
-		<Link Source="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Target="DefaultValue@JDV Parameter - Switch@Method" Category="Calls" />
-		<Link Source="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Target="IsRequired@JDV Parameter - Switch@Method" Category="Calls" />
-		<Link Source="TextParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="TextParameter@JDV Parameter Mgt. Impl.@Method" Target="TextParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="TimeParameter@JDV Parameter Mgt. Impl.@Method" Target="TimeParameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
-		<Link Source="TimeParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Calls" />
+		<Link Source="OnRun@JDV Param. Type Converter@Method" Target="Error@Dialog@Method" Category="Calls" />
+		<Link Source="ConvertToBoolean@JDV Param. Type Converter@Method" Target="ConvertToBoolean@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToCode@JDV Param. Type Converter@Method" Target="ConvertToCode@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToDate@JDV Param. Type Converter@Method" Target="ConvertToDate@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToDateFormula@JDV Param. Type Converter@Method" Target="ConvertToDateFormula@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToDateTime@JDV Param. Type Converter@Method" Target="ConvertToDateTime@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToDecimal@JDV Param. Type Converter@Method" Target="ConvertToDecimal@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToInteger@JDV Param. Type Converter@Method" Target="ConvertToInteger@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToText@JDV Param. Type Converter@Method" Target="ConvertToText@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="ConvertToTime@JDV Param. Type Converter@Method" Target="ConvertToTime@JDV Param. Type Converter Impl@Method" Category="Calls" />
+		<Link Source="OnRun@JDV Param. Type Converter Impl@Method" Target="Error@Dialog@Method" Category="Calls" />
+		<Link Source="ConvertToBoolean@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToCode@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToDate@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToDateFormula@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToDateTime@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToDecimal@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToInteger@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToText@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
+		<Link Source="ConvertToTime@JDV Param. Type Converter Impl@Method" Target="Evaluate@System@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="Format@System@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="Error@Dialog@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="ConvertToBoolean@JDV Parameter Mgt.@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Code@Method" Target="ConvertToCode@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="ConvertToBoolean@JDV Param. Type Converter@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Code@Method" Target="ConvertToCode@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Code@Method" Target="Format@System@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Date@Method" Target="ConvertToDate@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Date@Method" Target="ConvertToDate@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Date@Method" Target="Format@System@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - DateFormula@Method" Target="ConvertToDateFormula@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - DateFormula@Method" Target="ConvertToDateFormula@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - DateFormula@Method" Target="Format@System@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - DateTime@Method" Target="ConvertToDateTime@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - DateTime@Method" Target="ConvertToDateTime@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - DateTime@Method" Target="Format@System@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Decimal@Method" Target="ConvertToDecimal@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Decimal@Method" Target="ConvertToDecimal@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Decimal@Method" Target="Format@System@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Integer@Method" Target="ConvertToInteger@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Integer@Method" Target="ConvertToInteger@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Integer@Method" Target="Format@System@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Switch@Method" Target="Format@System@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Switch@Method" Target="ConvertToBoolean@JDV Parameter Mgt.@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Text@Method" Target="ConvertToText@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Switch@Method" Target="ConvertToBoolean@JDV Param. Type Converter@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Text@Method" Target="ConvertToText@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Text@Method" Target="Format@System@Method" Category="Calls" />
-		<Link Source="Convert@JDV Parameter - Time@Method" Target="ConvertToTime@JDV Parameter Mgt.@Method" Category="Calls" />
+		<Link Source="Convert@JDV Parameter - Time@Method" Target="ConvertToTime@JDV Param. Type Converter@Method" Category="Calls" />
 		<Link Source="Convert@JDV Parameter - Time@Method" Target="Format@System@Method" Category="Calls" />
 		<Link Source="Parameter Handling@@Module" Target="JDV ParamHandle Full@@PermissionSet" Category="Contains" />
 		<Link Source="Parameter Handling@@Module" Target="JDV Parameter - Boolean@@Codeunit" Category="Contains" />
@@ -647,13 +655,75 @@
 		<Link Source="Parameter Handling@@Module" Target="JDV Parameter - Switch@@Codeunit" Category="Contains" />
 		<Link Source="Parameter Handling@@Module" Target="JDV Parameter - Text@@Codeunit" Category="Contains" />
 		<Link Source="Parameter Handling@@Module" Target="JDV Parameter - Time@@Codeunit" Category="Contains" />
+		<Link Source="Parameter Handling@@Module" Target="JDV Parameter Factory@@Codeunit" Category="Contains" />
+		<Link Source="Parameter Handling@@Module" Target="JDV Parameter Factory Impl.@@Codeunit" Category="Contains" />
 		<Link Source="Parameter Handling@@Module" Target="JDV Parameter Handling@@Codeunit" Category="Contains" />
 		<Link Source="Parameter Handling@@Module" Target="JDV Parameter Handling Impl.@@Codeunit" Category="Contains" />
-		<Link Source="Parameter Handling@@Module" Target="JDV Parameter Mgt.@@Codeunit" Category="Contains" />
-		<Link Source="Parameter Handling@@Module" Target="JDV Parameter Mgt. Impl.@@Codeunit" Category="Contains" />
-		<Link Source="JDV Parameter Handling@@Codeunit" Target="OnRun@JDV Parameter Handling@Method" Category="Contains" />
+		<Link Source="Parameter Handling@@Module" Target="JDV Param. Type Converter Impl@@Codeunit" Category="Contains" />
+		<Link Source="Parameter Handling@@Module" Target="JDV Param. Type Converter@@Codeunit" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="OnRun@JDV Parameter Factory@Method" Category="Contains" />
 		<Link Source="Dialog@@Class" Target="Error@Dialog@Method" Category="Contains" />
 		<Link Source="System@@Module" Target="Dialog@@Class" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="BooleanParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="BooleanParameter@JDV Parameter Factory@Method" Target="Parameter@JDV Parameter Factory@ReturnValue" Category="Contains" />
+		<Link Source="BooleanParameter@JDV Parameter Factory@Method" Target="JDVParameterFactoryImpl@JDV Parameter Factory@LocalVariable" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="BooleanParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="CodeParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="CodeParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="DateFormulaParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="DateParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="DateParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="DateTimeParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="DateTimeParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="DecimalParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="DecimalParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="IntegerParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="IntegerParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="Parameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="Parameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="SwitchParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="SwitchParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="TextParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="TextParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory@@Codeunit" Target="TimeParameter@JDV Parameter Factory@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="TimeParameter@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="JDV Parameter Factory Impl.@@Codeunit" Target="OnRun@JDV Parameter Factory Impl.@Method" Category="Contains" />
+		<Link Source="BooleanParameter@JDV Parameter Factory Impl.@Method" Target="Parameter@JDV Parameter Factory Impl.@ReturnValue" Category="Contains" />
+		<Link Source="DateFormulaParameter@JDV Parameter Factory Impl.@Method" Target="DateFormulaValue@JDV Parameter Factory Impl.@LocalVariable" Category="Contains" />
+		<Link Source="System@@Class" Target="Evaluate@System@Method" Category="Contains" />
+		<Link Source="System@@Module" Target="System@@Class" Category="Contains" />
+		<Link Source="JDV Parameter - Text@@Codeunit" Target="Name@JDV Parameter - Text@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Text@@Codeunit" Target="DefaultValue@JDV Parameter - Text@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Text@@Codeunit" Target="IsRequired@JDV Parameter - Text@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Code@@Codeunit" Target="Name@JDV Parameter - Code@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Code@@Codeunit" Target="DefaultValue@JDV Parameter - Code@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Code@@Codeunit" Target="IsRequired@JDV Parameter - Code@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="Name@JDV Parameter - Boolean@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="DefaultValue@JDV Parameter - Boolean@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="IsRequired@JDV Parameter - Boolean@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Integer@@Codeunit" Target="Name@JDV Parameter - Integer@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Integer@@Codeunit" Target="DefaultValue@JDV Parameter - Integer@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Integer@@Codeunit" Target="IsRequired@JDV Parameter - Integer@Method" Category="Contains" />
+		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="Name@JDV Parameter - DateTime@Method" Category="Contains" />
+		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="DefaultValue@JDV Parameter - DateTime@Method" Category="Contains" />
+		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="IsRequired@JDV Parameter - DateTime@Method" Category="Contains" />
+		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="Name@JDV Parameter - DateFormula@Method" Category="Contains" />
+		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="DefaultValue@JDV Parameter - DateFormula@Method" Category="Contains" />
+		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="IsRequired@JDV Parameter - DateFormula@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="Name@JDV Parameter - Decimal@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="DefaultValue@JDV Parameter - Decimal@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="IsRequired@JDV Parameter - Decimal@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Date@@Codeunit" Target="Name@JDV Parameter - Date@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Date@@Codeunit" Target="DefaultValue@JDV Parameter - Date@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Date@@Codeunit" Target="IsRequired@JDV Parameter - Date@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Time@@Codeunit" Target="Name@JDV Parameter - Time@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Time@@Codeunit" Target="DefaultValue@JDV Parameter - Time@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Time@@Codeunit" Target="IsRequired@JDV Parameter - Time@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Switch@@Codeunit" Target="Name@JDV Parameter - Switch@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Switch@@Codeunit" Target="DefaultValue@JDV Parameter - Switch@Method" Category="Contains" />
+		<Link Source="JDV Parameter - Switch@@Codeunit" Target="IsRequired@JDV Parameter - Switch@Method" Category="Contains" />
+		<Link Source="JDV Parameter Handling@@Codeunit" Target="OnRun@JDV Parameter Handling@Method" Category="Contains" />
 		<Link Source="JDV Parameter Handling@@Codeunit" Target="JDVParameterHandlingImpl@JDV Parameter Handling@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter Handling@@Codeunit" Target="AddAllowedParameter@JDV Parameter Handling@Method" Category="Contains" />
 		<Link Source="Parameter Handling@@Module" Target="JDV Parameter Handler@@Interface" Category="Contains" />
@@ -686,7 +756,6 @@
 		<Link Source="List@@Class" Target="Count@List@Method" Category="Contains" />
 		<Link Source="DefineAllowedParameters@JDV Parameter Handling Impl.@Method" Target="Index@JDV Parameter Handling Impl.@LocalVariable" Category="Contains" />
 		<Link Source="System@@Class" Target="ArrayLen@System@Method" Category="Contains" />
-		<Link Source="System@@Module" Target="System@@Class" Category="Contains" />
 		<Link Source="JDV Parameter Handler@@Interface" Target="Initialized@JDV Parameter Handler@Method" Category="Contains" />
 		<Link Source="JDV Parameter Handling Impl.@@Codeunit" Target="TestDuplicate@JDV Parameter Handling Impl.@Method" Category="Contains" />
 		<Link Source="JDV Parameter Handling Impl.@@Codeunit" Target="BuildFullParameterString@JDV Parameter Handling Impl.@Method" Category="Contains" />
@@ -741,85 +810,6 @@
 		<Link Source="TestRequiredParameters@JDV Parameter Handling Impl.@Method" Target="RequiredParameterMissingErr@JDV Parameter Handling Impl.@LocalVariable" Category="Contains" />
 		<Link Source="TestValidParameterString@JDV Parameter Handling Impl.@Method" Target="InvalidParameterStringErr@JDV Parameter Handling Impl.@LocalVariable" Category="Contains" />
 		<Link Source="Text@@Class" Target="StartsWith@Text@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="OnRun@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="BooleanParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="BooleanParameter@JDV Parameter Mgt.@Method" Target="Parameter@JDV Parameter Mgt.@ReturnValue" Category="Contains" />
-		<Link Source="BooleanParameter@JDV Parameter Mgt.@Method" Target="JDVParameterMgtImpl@JDV Parameter Mgt.@LocalVariable" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="BooleanParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="CodeParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="CodeParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToBoolean@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="ConvertToBoolean@JDV Parameter Mgt.@Method" Target="Value@JDV Parameter Mgt.@ReturnValue" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToBoolean@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToCode@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToCode@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToDate@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToDate@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToDateFormula@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToDateFormula@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToDateTime@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToDateTime@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToDecimal@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToDecimal@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToInteger@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToInteger@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToText@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToText@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="ConvertToTime@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="ConvertToTime@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="DateFormulaParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="DateParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="DateParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="IntegerParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="IntegerParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="DateTimeParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="DateTimeParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="DecimalParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="DecimalParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="Parameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="Parameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="SwitchParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="SwitchParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="TextParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="TextParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt.@@Codeunit" Target="TimeParameter@JDV Parameter Mgt.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="TimeParameter@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="JDV Parameter Mgt. Impl.@@Codeunit" Target="OnRun@JDV Parameter Mgt. Impl.@Method" Category="Contains" />
-		<Link Source="BooleanParameter@JDV Parameter Mgt. Impl.@Method" Target="Parameter@JDV Parameter Mgt. Impl.@ReturnValue" Category="Contains" />
-		<Link Source="ConvertToBoolean@JDV Parameter Mgt. Impl.@Method" Target="Value@JDV Parameter Mgt. Impl.@ReturnValue" Category="Contains" />
-		<Link Source="System@@Class" Target="Evaluate@System@Method" Category="Contains" />
-		<Link Source="DateFormulaParameter@JDV Parameter Mgt. Impl.@Method" Target="DateFormulaValue@JDV Parameter Mgt. Impl.@LocalVariable" Category="Contains" />
-		<Link Source="JDV Parameter - Text@@Codeunit" Target="Name@JDV Parameter - Text@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Text@@Codeunit" Target="DefaultValue@JDV Parameter - Text@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Text@@Codeunit" Target="IsRequired@JDV Parameter - Text@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Code@@Codeunit" Target="Name@JDV Parameter - Code@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Code@@Codeunit" Target="DefaultValue@JDV Parameter - Code@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Code@@Codeunit" Target="IsRequired@JDV Parameter - Code@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="Name@JDV Parameter - Boolean@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="DefaultValue@JDV Parameter - Boolean@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="IsRequired@JDV Parameter - Boolean@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Integer@@Codeunit" Target="Name@JDV Parameter - Integer@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Integer@@Codeunit" Target="DefaultValue@JDV Parameter - Integer@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Integer@@Codeunit" Target="IsRequired@JDV Parameter - Integer@Method" Category="Contains" />
-		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="Name@JDV Parameter - DateTime@Method" Category="Contains" />
-		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="DefaultValue@JDV Parameter - DateTime@Method" Category="Contains" />
-		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="IsRequired@JDV Parameter - DateTime@Method" Category="Contains" />
-		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="Name@JDV Parameter - DateFormula@Method" Category="Contains" />
-		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="DefaultValue@JDV Parameter - DateFormula@Method" Category="Contains" />
-		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="IsRequired@JDV Parameter - DateFormula@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="Name@JDV Parameter - Decimal@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="DefaultValue@JDV Parameter - Decimal@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="IsRequired@JDV Parameter - Decimal@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Date@@Codeunit" Target="Name@JDV Parameter - Date@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Date@@Codeunit" Target="DefaultValue@JDV Parameter - Date@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Date@@Codeunit" Target="IsRequired@JDV Parameter - Date@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Time@@Codeunit" Target="Name@JDV Parameter - Time@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Time@@Codeunit" Target="DefaultValue@JDV Parameter - Time@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Time@@Codeunit" Target="IsRequired@JDV Parameter - Time@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Switch@@Codeunit" Target="Name@JDV Parameter - Switch@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Switch@@Codeunit" Target="DefaultValue@JDV Parameter - Switch@Method" Category="Contains" />
-		<Link Source="JDV Parameter - Switch@@Codeunit" Target="IsRequired@JDV Parameter - Switch@Method" Category="Contains" />
 		<Link Source="Parameter Handling@@Module" Target="JDV ParameterType@@Enum" Category="Contains" />
 		<Link Source="JDV ParameterType@@Enum" Target="Text@JDV ParameterType@EnumValue" Category="Contains" />
 		<Link Source="JDV ParameterType@@Enum" Target="Code@JDV ParameterType@EnumValue" Category="Contains" />
@@ -831,6 +821,29 @@
 		<Link Source="JDV ParameterType@@Enum" Target="Boolean@JDV ParameterType@EnumValue" Category="Contains" />
 		<Link Source="JDV ParameterType@@Enum" Target="DateFormula@JDV ParameterType@EnumValue" Category="Contains" />
 		<Link Source="JDV ParameterType@@Enum" Target="Switch@JDV ParameterType@EnumValue" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="OnRun@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToBoolean@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="ConvertToBoolean@JDV Param. Type Converter@Method" Target="Value@JDV Param. Type Converter@ReturnValue" Category="Contains" />
+		<Link Source="ConvertToBoolean@JDV Param. Type Converter@Method" Target="JDVParamTypeConverterImpl@JDV Param. Type Converter@LocalVariable" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToBoolean@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToCode@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToCode@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToDate@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToDate@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToDateFormula@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToDateFormula@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToDateTime@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToDateTime@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToDecimal@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToDecimal@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToInteger@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToInteger@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToText@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToText@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter@@Codeunit" Target="ConvertToTime@JDV Param. Type Converter@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="ConvertToTime@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="JDV Param. Type Converter Impl@@Codeunit" Target="OnRun@JDV Param. Type Converter Impl@Method" Category="Contains" />
+		<Link Source="ConvertToBoolean@JDV Param. Type Converter Impl@Method" Target="Value@JDV Param. Type Converter Impl@ReturnValue" Category="Contains" />
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="Required@JDV Parameter - Boolean@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="HasDefaultValue@JDV Parameter - Boolean@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="HasName@JDV Parameter - Boolean@GlobalVariable" Category="Contains" />
@@ -838,7 +851,7 @@
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Boolean@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="ValueVariant@JDV Parameter - Boolean@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="Convert@JDV Parameter - Boolean@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="JDVParameterMgt@JDV Parameter - Boolean@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="JDVParamTypeConverter@JDV Parameter - Boolean@LocalVariable" Category="Contains" />
 		<Link Source="Convert@JDV Parameter - Boolean@Method" Target="ValueRequiredErr@JDV Parameter - Boolean@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="Initialized@JDV Parameter - Boolean@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Boolean@@Codeunit" Target="Value@JDV Parameter - Boolean@Method" Category="Contains" />
@@ -849,7 +862,7 @@
 		<Link Source="JDV Parameter - Code@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Code@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Code@@Codeunit" Target="ValueVariant@JDV Parameter - Code@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Code@@Codeunit" Target="Convert@JDV Parameter - Code@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Code@Method" Target="JDVParameterMgt@JDV Parameter - Code@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Code@Method" Target="JDVParamTypeConverter@JDV Parameter - Code@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Code@@Codeunit" Target="Initialized@JDV Parameter - Code@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Code@@Codeunit" Target="Value@JDV Parameter - Code@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Date@@Codeunit" Target="Required@JDV Parameter - Date@GlobalVariable" Category="Contains" />
@@ -859,7 +872,7 @@
 		<Link Source="JDV Parameter - Date@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Date@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Date@@Codeunit" Target="ValueVariant@JDV Parameter - Date@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Date@@Codeunit" Target="Convert@JDV Parameter - Date@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Date@Method" Target="JDVParameterMgt@JDV Parameter - Date@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Date@Method" Target="JDVParamTypeConverter@JDV Parameter - Date@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Date@@Codeunit" Target="Initialized@JDV Parameter - Date@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Date@@Codeunit" Target="Value@JDV Parameter - Date@Method" Category="Contains" />
 		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="Required@JDV Parameter - DateFormula@GlobalVariable" Category="Contains" />
@@ -869,7 +882,7 @@
 		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="DefaultValueVariant@JDV Parameter - DateFormula@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="ValueVariant@JDV Parameter - DateFormula@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="Convert@JDV Parameter - DateFormula@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - DateFormula@Method" Target="JDVParameterMgt@JDV Parameter - DateFormula@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - DateFormula@Method" Target="JDVParamTypeConverter@JDV Parameter - DateFormula@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="Value@JDV Parameter - DateFormula@Method" Category="Contains" />
 		<Link Source="JDV Parameter - DateFormula@@Codeunit" Target="Initialized@JDV Parameter - DateFormula@Method" Category="Contains" />
 		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="Required@JDV Parameter - DateTime@GlobalVariable" Category="Contains" />
@@ -879,7 +892,7 @@
 		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="DefaultValueVariant@JDV Parameter - DateTime@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="ValueVariant@JDV Parameter - DateTime@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="Convert@JDV Parameter - DateTime@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - DateTime@Method" Target="JDVParameterMgt@JDV Parameter - DateTime@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - DateTime@Method" Target="JDVParamTypeConverter@JDV Parameter - DateTime@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="Initialized@JDV Parameter - DateTime@Method" Category="Contains" />
 		<Link Source="JDV Parameter - DateTime@@Codeunit" Target="Value@JDV Parameter - DateTime@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="Required@JDV Parameter - Decimal@GlobalVariable" Category="Contains" />
@@ -889,7 +902,7 @@
 		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Decimal@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="ValueVariant@JDV Parameter - Decimal@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="Convert@JDV Parameter - Decimal@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Decimal@Method" Target="JDVParameterMgt@JDV Parameter - Decimal@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Decimal@Method" Target="JDVParamTypeConverter@JDV Parameter - Decimal@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="Initialized@JDV Parameter - Decimal@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Decimal@@Codeunit" Target="Value@JDV Parameter - Decimal@Method" Category="Contains" />
 		<Link Source="JDV Parameter Handler@@Interface" Target="DefaultValue@JDV Parameter Handler@Method" Category="Contains" />
@@ -900,7 +913,7 @@
 		<Link Source="JDV Parameter - Integer@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Integer@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Integer@@Codeunit" Target="ValueVariant@JDV Parameter - Integer@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Integer@@Codeunit" Target="Convert@JDV Parameter - Integer@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Integer@Method" Target="JDVParameterMgt@JDV Parameter - Integer@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Integer@Method" Target="JDVParamTypeConverter@JDV Parameter - Integer@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Integer@@Codeunit" Target="Initialized@JDV Parameter - Integer@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Integer@@Codeunit" Target="Value@JDV Parameter - Integer@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Switch@@Codeunit" Target="Required@JDV Parameter - Switch@GlobalVariable" Category="Contains" />
@@ -910,7 +923,7 @@
 		<Link Source="JDV Parameter - Switch@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Switch@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Switch@@Codeunit" Target="ValueVariant@JDV Parameter - Switch@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Switch@@Codeunit" Target="Convert@JDV Parameter - Switch@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Switch@Method" Target="JDVParameterMgt@JDV Parameter - Switch@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Switch@Method" Target="JDVParamTypeConverter@JDV Parameter - Switch@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Switch@@Codeunit" Target="Initialized@JDV Parameter - Switch@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Switch@@Codeunit" Target="Value@JDV Parameter - Switch@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Text@@Codeunit" Target="Required@JDV Parameter - Text@GlobalVariable" Category="Contains" />
@@ -920,7 +933,7 @@
 		<Link Source="JDV Parameter - Text@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Text@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Text@@Codeunit" Target="ValueVariant@JDV Parameter - Text@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Text@@Codeunit" Target="Convert@JDV Parameter - Text@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Text@Method" Target="JDVParameterMgt@JDV Parameter - Text@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Text@Method" Target="JDVParamTypeConverter@JDV Parameter - Text@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Text@@Codeunit" Target="Initialized@JDV Parameter - Text@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Text@@Codeunit" Target="Value@JDV Parameter - Text@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Time@@Codeunit" Target="Required@JDV Parameter - Time@GlobalVariable" Category="Contains" />
@@ -930,7 +943,7 @@
 		<Link Source="JDV Parameter - Time@@Codeunit" Target="DefaultValueVariant@JDV Parameter - Time@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Time@@Codeunit" Target="ValueVariant@JDV Parameter - Time@GlobalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Time@@Codeunit" Target="Convert@JDV Parameter - Time@Method" Category="Contains" />
-		<Link Source="Convert@JDV Parameter - Time@Method" Target="JDVParameterMgt@JDV Parameter - Time@LocalVariable" Category="Contains" />
+		<Link Source="Convert@JDV Parameter - Time@Method" Target="JDVParamTypeConverter@JDV Parameter - Time@LocalVariable" Category="Contains" />
 		<Link Source="JDV Parameter - Time@@Codeunit" Target="Initialized@JDV Parameter - Time@Method" Category="Contains" />
 		<Link Source="JDV Parameter - Time@@Codeunit" Target="Value@JDV Parameter - Time@Method" Category="Contains" />
 	</Links>
@@ -1030,10 +1043,6 @@
 		  <Setter Property="DrawArrow" Value="true" />
 		  <Setter Property="TargetDecorator" Value="OpenArrow" />
 		</Style>        
-	    <Style TargetType="Node" GroupLabel="Deprecated" ValueLabel="True">
-		    <Condition Expression="Deprecated='true'" />\
-		    <Setter Property="Background" Value="Yellow" />
-	    </Style>
 	    <Style TargetType="Link" GroupLabel="Subscribe to" ValueLabel="True">
 		  <Condition Expression="HasCategory('SubscribeTo')" />
 		  <Setter Property="Stroke" Value="Blue" />
